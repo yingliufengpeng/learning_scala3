@@ -1,0 +1,21 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(841bf2cd-6080-4069-8226-b493946378c5), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[31merror[0m] [0m[0mServer access Error: Network is unreachable: connect url=https://repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3.0.0-M3/3.0.0-M3/scala3-compiler_3.0.0-M3-3.0.0-M3.jar[0m
+[0m[[0m[31merror[0m] [0m[0mServer access Error: Network is unreachable: connect url=https://maven.aliyun.com/repository/public/org/scala-lang/scala3-compiler_3.0.0-M3/3.0.0-M3/scala3-compiler_3.0.0-M3-3.0.0-M3.jar[0m
+[0m[[0m[31merror[0m] [0m[0mServer access Error: Network is unreachable: connect url=https://maven.aliyun.com/nexus/content/groups/public/org/scala-lang/scala3-compiler_3.0.0-M3/3.0.0-M3/scala3-compiler_3.0.0-M3-3.0.0-M3.jar[0m
+[0m[[0m[31merror[0m] [0m[0mServer access Error: Network is unreachable: connect url=https://oss.sonatype.org/content/repositories/releases/org/scala-lang/scala3-compiler_3.0.0-M3/3.0.0-M3/scala3-compiler_3.0.0-M3-3.0.0-M3.jar[0m
+[0m[[0m[31merror[0m] [0m[0mServer access Error: Network is unreachable: connect url=https://oss.sonatype.org/content/repositories/snapshots/org/scala-lang/scala3-compiler_3.0.0-M3/3.0.0-M3/scala3-compiler_3.0.0-M3-3.0.0-M3.jar[0m
+[0m[[0m[31merror[0m] [0m[0mServer access Error: Network is unreachable: connect url=https://dl.bintray.com/sbt/sbt-plugin-releases/org.scala-lang/scala3-compiler_3.0.0-M3/3.0.0-M3/jars/scala3-compiler_3.0.0-M3.jar[0m
+[0m[[0m[31merror[0m] [0m[0mServer access Error: Network is unreachable: connect url=https://jcenter.bintray.com/org/scala-lang/scala3-compiler_3.0.0-M3/3.0.0-M3/scala3-compiler_3.0.0-M3-3.0.0-M3.jar[0m
+[0m[[0m[33mwarn[0m] [0m[0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m[[0m[33mwarn[0m] [0m[0m	::              FAILED DOWNLOADS            ::[0m
+[0m[[0m[33mwarn[0m] [0m[0m	:: ^ see resolution messages for details  ^ ::[0m
+[0m[[0m[33mwarn[0m] [0m[0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m[[0m[33mwarn[0m] [0m[0m	:: org.scala-lang#scala3-compiler_3.0.0-M3;3.0.0-M3!scala3-compiler_3.0.0-M3.jar[0m
+[0m[[0m[33mwarn[0m] [0m[0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m[[0m[31merror[0m] [0m[0mCouldn't retrieve `org.scala-lang:scala3-compiler:3.0.0-M3`.[0m
+[0m[[0m[31merror[0m] [0m[0m([31mscalaInstance[0m) Couldn't retrieve `org.scala-lang:scala3-compiler:3.0.0-M3`.[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 2 s, completed 2021年1月21日 下午5:01:36[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m
