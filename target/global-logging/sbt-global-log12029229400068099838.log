@@ -1,8 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(cec8b20d-d307-4a58-8817-98b9d471a650), Some(CommandSource(console0)))[0m
-[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
-[0m[[0m[0minfo[0m] [0m[0mdownloading https://repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3.0.0-M3/3.0.0-M3/scala3-compiler_3.0.0-M3-3.0.0-M3.jar ...[0m
-[0m[[0m[0minfo[0m] [0m[0m	[SUCCESSFUL ] org.scala-lang#scala3-compiler_3.0.0-M3;3.0.0-M3!scala3-compiler_3.0.0-M3.jar (92930ms)[0m
-[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to E:\scala3_repo\scala-3-project-template\target\scala-3.0.0-M3\classes ...[0m
-[0m[[0m[32msuccess[0m] [0m[0mTotal time: 98 s (01:38), completed 2021年1月21日 下午5:04:17[0m
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
