@@ -61,11 +61,11 @@
   </component>
   <component name="RunManager" selected="Application.concurency_start">
     <configuration name="concurency_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_concurency.concurency_start" />
+      <option name="MAIN_CLASS_NAME" value="scala3_concurrency.concurency_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scala3_concurency.*" />
+          <option name="PATTERN" value="scala3_concurrency.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,11 +100,11 @@
       </method>
     </configuration>
     <configuration name="main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_concurency.main" />
+      <option name="MAIN_CLASS_NAME" value="scala3_concurrency.main" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scala3_concurency.*" />
+          <option name="PATTERN" value="scala3_concurrency.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
