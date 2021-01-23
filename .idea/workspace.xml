@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="ch20 inner_class abstract type members">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_book/ch15_match_types.scala" afterDir="false" />
+    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="ch15 match types">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_concurency/main.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,13 +59,13 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
   </component>
-  <component name="RunManager" selected="Application.match_types_start">
-    <configuration name="context_bounds_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_book.context_bounds_start" />
+  <component name="RunManager" selected="Application.concurency_start">
+    <configuration name="concurency_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_concurency.concurency_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scala3_book.*" />
+          <option name="PATTERN" value="scala3_concurency.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="match_types_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_book.match_types_start" />
+    <configuration name="main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_concurency.main" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scala3_book.*" />
+          <option name="PATTERN" value="scala3_concurency.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,8 +112,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ploymorphic_function_types_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_book.ploymorphic_function_types_start" />
+    <configuration name="match_types_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_book.match_types_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
@@ -138,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.concurency_start" />
+        <item itemvalue="Application.main" />
         <item itemvalue="Application.match_types_start" />
         <item itemvalue="Application.inner_classes_abstract_type_members_start" />
         <item itemvalue="Application.context_functions_start" />
-        <item itemvalue="Application.context_bounds_start" />
-        <item itemvalue="Application.ploymorphic_function_types_start" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +160,7 @@
       <workItem from="1611200410743" duration="636000" />
       <workItem from="1611220687814" duration="15411000" />
       <workItem from="1611284466947" duration="16430000" />
-      <workItem from="1611367615361" duration="20233000" />
+      <workItem from="1611367615361" duration="22329000" />
     </task>
     <task id="LOCAL-00001" summary="scala3_book首次学习,并持之以恒">
       <created>1611237212575</created>
@@ -295,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611398508611</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="ch15 match types">
+      <created>1611404956287</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1611404956287</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,6 +340,7 @@
     <MESSAGE value="ch18 context bounds" />
     <MESSAGE value="ch19 context function" />
     <MESSAGE value="ch20 inner_class abstract type members" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch20 inner_class abstract type members" />
+    <MESSAGE value="ch15 match types" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch15 match types" />
   </component>
 </project>
