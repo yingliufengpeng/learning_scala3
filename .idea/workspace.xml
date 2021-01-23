@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="ch15 match types">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_concurency/main.scala" afterDir="false" />
+    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="scala3 concurrency">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_scala_for_python_developer/for_python_developer.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,26 +59,13 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
   </component>
-  <component name="RunManager" selected="Application.concurency_start">
+  <component name="RunManager" selected="Application.python_developer_start">
     <configuration name="concurency_start" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="scala3_concurrency.concurency_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="scala3_concurrency.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="context_functions_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_book.context_functions_start" />
-      <module name="scala3-simple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scala3_book.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,6 +112,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="python_developer_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_scala_for_python_developer.python_developer_start" />
+      <module name="scala3-simple" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scala3_scala_for_python_developer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -138,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.python_developer_start" />
         <item itemvalue="Application.concurency_start" />
         <item itemvalue="Application.main" />
         <item itemvalue="Application.match_types_start" />
         <item itemvalue="Application.inner_classes_abstract_type_members_start" />
-        <item itemvalue="Application.context_functions_start" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +160,7 @@
       <workItem from="1611200410743" duration="636000" />
       <workItem from="1611220687814" duration="15411000" />
       <workItem from="1611284466947" duration="16430000" />
-      <workItem from="1611367615361" duration="22329000" />
+      <workItem from="1611367615361" duration="23519000" />
     </task>
     <task id="LOCAL-00001" summary="scala3_book首次学习,并持之以恒">
       <created>1611237212575</created>
@@ -302,7 +302,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611404956287</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="scala3 concurrency">
+      <created>1611407899737</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1611407899737</updated>
+    </task>
+    <task id="LOCAL-00022" summary="scala3 concurrency">
+      <created>1611407909399</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1611407909399</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,6 +355,7 @@
     <MESSAGE value="ch19 context function" />
     <MESSAGE value="ch20 inner_class abstract type members" />
     <MESSAGE value="ch15 match types" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch15 match types" />
+    <MESSAGE value="scala3 concurrency" />
+    <option name="LAST_COMMIT_MESSAGE" value="scala3 concurrency" />
   </component>
 </project>
