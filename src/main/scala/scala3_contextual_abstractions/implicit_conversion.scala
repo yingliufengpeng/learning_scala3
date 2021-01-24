@@ -6,10 +6,11 @@ object implicit_conversion {
   // class. For example, not accounting for possible conversion errors, this code 
   // defines an implicit conversion from String to Int 
   
-//  given Conversion[String, Int] with 
-//    def apply(s: String): Int = Integer.parseInt(s)
+  //  given Conversion[String, Int] with 
+  //    def apply(s: String): Int = Integer.parseInt(s)
   
   given Conversion[String, Int] = Integer.parseInt(_)
+  given Conversion[String, Double] = _ => 4.0
   
   @main def implicit_conversion_start(): Unit = {
     
@@ -18,6 +19,10 @@ object implicit_conversion {
     // pass it a String that converts to an Int 
     val r = plus1("4")
     println(f"r is $r")
+    
+    val r2: Double = "kk"
+    
+    println(f"r2 is $r2")
     
   }
 
