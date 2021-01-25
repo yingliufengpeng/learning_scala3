@@ -2,3 +2,4 @@
 *.log
 *.tasty
 target
+project/target
