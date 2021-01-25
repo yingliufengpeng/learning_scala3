@@ -1,7 +1,5 @@
 package scala3_types_and_the_type_system
 
-import scala3_book.ch12_multiveral_equality.PrintedBook
-
 object dependent_method_types {
   
   trait Key:
@@ -50,6 +48,15 @@ object dependent_method_types {
   type Prog = (n: NumsDSL) ?=> n.Num => n.Num 
   
   def derivative(input: Prog)(v: Double)(using ev: NumsDSL): Double = input(const(v)).toDouble
+  
+  object C:
+ 
+    opaque type T = Double
+    
+    def apply(v: Double): T = v
+  
+    def f(v: T) = println(v)
+
 
   @main def dependent_method_types_start(): Unit = {
     
@@ -61,6 +68,13 @@ object dependent_method_types {
 //    val r = derivative(x => x)(0.3)(using numsIntDSL)
     val r = derivative(x => x)(0.3)
     println(f"r is $r")
+    
+    import C._ 
+    val f = C(3.0)
+    val m = 3.0
+ 
+ 
+     
     
   }
 
