@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="scala3 contextual abstraction">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/owl/event_bus.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_contextual_abstractions/implicit_conversion.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_contextual_abstractions/implicit_conversion.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/owl/event_bus.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/owl/event_bus.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,19 +93,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="scala3-simple" />
       <option name="PACKAGE_NAME" value="" />
@@ -152,7 +137,8 @@
       <workItem from="1611220687814" duration="15411000" />
       <workItem from="1611284466947" duration="16430000" />
       <workItem from="1611367615361" duration="28266000" />
-      <workItem from="1611495798977" duration="8830000" />
+      <workItem from="1611495798977" duration="9163000" />
+      <workItem from="1611543840555" duration="601000" />
     </task>
     <task id="LOCAL-00001" summary="scala3_book首次学习,并持之以恒">
       <created>1611237212575</created>
@@ -322,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611417444564</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="简单的scala3 的使用">
+      <created>1611504818982</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1611504818982</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,7 +357,8 @@
     <MESSAGE value="scala3 concurrency" />
     <MESSAGE value="scala3 for python developers" />
     <MESSAGE value="scala3 contextual abstraction" />
-    <option name="LAST_COMMIT_MESSAGE" value="scala3 contextual abstraction" />
+    <MESSAGE value="简单的scala3 的使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="简单的scala3 的使用" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

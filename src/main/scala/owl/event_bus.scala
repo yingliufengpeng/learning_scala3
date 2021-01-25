@@ -44,7 +44,7 @@ object tests {
   
   enum Color2:
     case Color(r: Byte, g: Byte, b: Byte)
-    case HSI(h: Int, s: Int, i: Int)
+    case HSI(h: Int, s: Int, i: Int) extends Color2
     
     def eat: Unit = this match
       case Color(r, g, b) => f""
