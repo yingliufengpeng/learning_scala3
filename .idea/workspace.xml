@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="scala3 contextual abstraction update">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_oher_changed_features/automatic_eta_expansion.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_oher_changed_features/numeric_literals.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_oher_changed_features/rules_for_operators.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_oher_changed_features/structurl_types.scala" afterDir="false" />
+    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="scala3 other changed features">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/export_clauses.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/kind_polymorphism.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/matchable_trait.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/open/base/Base.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/open/open_demo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/open/sub/Sub.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/trait_parameterts.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/transparent_trait.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_oher_changed_features/automatic_eta_expansion.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_oher_changed_features/automatic_eta_expansion.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Scala Worksheet" />
+        <option value="Package Object" />
       </list>
     </option>
   </component>
@@ -62,13 +68,13 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
   </component>
-  <component name="RunManager" selected="Application.automatic_eta_expansion_start">
-    <configuration name="automatic_eta_expansion_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_oher_changed_features.automatic_eta_expansion_start" />
+  <component name="RunManager" selected="Application.matchable_trati_start">
+    <configuration name="export_clauses_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_other_new_feathures.export_clauses_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scala3_oher_changed_features.*" />
+          <option name="PATTERN" value="scala3_other_new_feathures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="dependent_method_types_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_types_and_the_type_system.dependent_method_types_start" />
+    <configuration name="kind_polymorphism_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_other_new_feathures.kind_polymorphism_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scala3_types_and_the_type_system.*" />
+          <option name="PATTERN" value="scala3_other_new_feathures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="numeric_literals_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_oher_changed_features.numeric_literals_start" />
+    <configuration name="matchable_trati_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_other_new_feathures.matchable_trati_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scala3_oher_changed_features.*" />
+          <option name="PATTERN" value="scala3_other_new_feathures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ruels_for_operators_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_oher_changed_features.ruels_for_operators_start" />
+    <configuration name="open_demo_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_other_new_feathures.open.open_demo_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scala3_oher_changed_features.*" />
+          <option name="PATTERN" value="scala3_other_new_feathures.open.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="structural_types_strart" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_oher_changed_features.structural_types_strart" />
+    <configuration name="transparent_trait_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_other_new_feathures.transparent_trait_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scala3_oher_changed_features.*" />
+          <option name="PATTERN" value="scala3_other_new_feathures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.automatic_eta_expansion_start" />
-        <item itemvalue="Application.ruels_for_operators_start" />
-        <item itemvalue="Application.structural_types_strart" />
-        <item itemvalue="Application.numeric_literals_start" />
-        <item itemvalue="Application.dependent_method_types_start" />
+        <item itemvalue="Application.matchable_trati_start" />
+        <item itemvalue="Application.kind_polymorphism_start" />
+        <item itemvalue="Application.open_demo_start" />
+        <item itemvalue="Application.export_clauses_start" />
+        <item itemvalue="Application.transparent_trait_start" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +174,7 @@
       <workItem from="1611367615361" duration="28266000" />
       <workItem from="1611495798977" duration="9163000" />
       <workItem from="1611543840555" duration="13562000" />
-      <workItem from="1611627777303" duration="11945000" />
+      <workItem from="1611627777303" duration="20938000" />
     </task>
     <task id="LOCAL-00001" summary="scala3_book首次学习,并持之以恒">
       <created>1611237212575</created>
@@ -359,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611592556929</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="scala3 other changed features">
+      <created>1611651658498</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1611651658498</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +391,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ch01 type_inference" />
     <MESSAGE value="ch02 generic_class" />
     <MESSAGE value="ch03_variance" />
     <MESSAGE value="ch04 Upper and lower type bounds" />
@@ -403,7 +415,8 @@
     <MESSAGE value="简单的scala3 的使用" />
     <MESSAGE value="event bus update" />
     <MESSAGE value="scala3 contextual abstraction update" />
-    <option name="LAST_COMMIT_MESSAGE" value="scala3 contextual abstraction update" />
+    <MESSAGE value="scala3 other changed features" />
+    <option name="LAST_COMMIT_MESSAGE" value="scala3 other changed features" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
