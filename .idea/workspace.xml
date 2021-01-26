@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="scala3 contextual abstraction">
+    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="scala3 contextual abstraction update">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_oher_changed_features/automatic_eta_expansion.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_oher_changed_features/numeric_literals.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_oher_changed_features/rules_for_operators.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_oher_changed_features/structurl_types.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_types_and_the_type_system/dependent_method_types.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_types_and_the_type_system/dependent_method_types.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +62,20 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
   </component>
-  <component name="RunManager" selected="Application.dependent_method_types_start">
+  <component name="RunManager" selected="Application.automatic_eta_expansion_start">
+    <configuration name="automatic_eta_expansion_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_oher_changed_features.automatic_eta_expansion_start" />
+      <module name="scala3-simple" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scala3_oher_changed_features.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="dependent_method_types_start" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="scala3_types_and_the_type_system.dependent_method_types_start" />
       <module name="scala3-simple" />
@@ -73,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="structural_types_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_types_and_the_type_system.structural_types_start" />
+    <configuration name="numeric_literals_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_oher_changed_features.numeric_literals_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scala3_types_and_the_type_system.*" />
+          <option name="PATTERN" value="scala3_oher_changed_features.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tests_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="owl.tests_start" />
+    <configuration name="ruels_for_operators_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_oher_changed_features.ruels_for_operators_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="owl.*" />
+          <option name="PATTERN" value="scala3_oher_changed_features.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="types_and_type_system_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_types_and_the_type_system.types_and_type_system_start" />
+    <configuration name="structural_types_strart" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_oher_changed_features.structural_types_strart" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scala3_types_and_the_type_system.*" />
+          <option name="PATTERN" value="scala3_oher_changed_features.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,37 +128,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="variance_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_types_and_the_type_system.variance_start" />
-      <module name="scala3-simple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scala3_types_and_the_type_system.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.automatic_eta_expansion_start" />
+        <item itemvalue="Application.ruels_for_operators_start" />
+        <item itemvalue="Application.structural_types_strart" />
+        <item itemvalue="Application.numeric_literals_start" />
         <item itemvalue="Application.dependent_method_types_start" />
-        <item itemvalue="Application.structural_types_start" />
-        <item itemvalue="Application.variance_start" />
-        <item itemvalue="Application.types_and_type_system_start" />
-        <item itemvalue="Application.tests_start" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +167,8 @@
       <workItem from="1611284466947" duration="16430000" />
       <workItem from="1611367615361" duration="28266000" />
       <workItem from="1611495798977" duration="9163000" />
-      <workItem from="1611543840555" duration="13287000" />
+      <workItem from="1611543840555" duration="13562000" />
+      <workItem from="1611627777303" duration="11945000" />
     </task>
     <task id="LOCAL-00001" summary="scala3_book首次学习,并持之以恒">
       <created>1611237212575</created>
@@ -346,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611579707831</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="scala3 contextual abstraction update">
+      <created>1611592556929</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1611592556929</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +378,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="scala3_book首次学习,并持之以恒" />
     <MESSAGE value="ch01 type_inference" />
     <MESSAGE value="ch02 generic_class" />
     <MESSAGE value="ch03_variance" />
@@ -390,7 +402,8 @@
     <MESSAGE value="scala3 contextual abstraction" />
     <MESSAGE value="简单的scala3 的使用" />
     <MESSAGE value="event bus update" />
-    <option name="LAST_COMMIT_MESSAGE" value="event bus update" />
+    <MESSAGE value="scala3 contextual abstraction update" />
+    <option name="LAST_COMMIT_MESSAGE" value="scala3 contextual abstraction update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
