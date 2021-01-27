@@ -13,8 +13,8 @@
             <option value="$PROJECT_DIR$/project" />
           </set>
         </option>
-        <option name="sbtVersion" value="1.4.6" />
       </SbtProjectSettings>
     </option>
+    <option name="vmParameters" value="-Dhttp.proxyHost=localhost -Dhttp.proxyPort=50091 -Dhttp.proxySet=true  -Dhttps.proxyHost=localhost -Dhttps.proxyPort=50091  -Dhttps.proxySet=true" />
   </component>
 </project>

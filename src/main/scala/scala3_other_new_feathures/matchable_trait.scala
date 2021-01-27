@@ -1,6 +1,11 @@
 package scala3_other_new_feathures
+import scala.annotation.threadUnsafe
+
 
 object matchable_trait {
+  
+  class Hello:
+    @threadUnsafe lazy val x: Int = 2
 
   def f[T](x: T) = x.asInstanceOf[Matchable] match
     case a: Array[Int] => a(0) = 0
@@ -15,5 +20,8 @@ object matchable_trait {
     val r2: AnyRef = r 
     println(f"r2 is $r2")
     
+    
+    val h = Hello() 
+    println(f"h'x is ${h.x}")
   }
 }

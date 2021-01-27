@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="scala3 other changed features">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/export_clauses.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/kind_polymorphism.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/matchable_trait.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/open/base/Base.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/open/open_demo.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/open/sub/Sub.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/trait_parameterts.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/transparent_trait.scala" afterDir="false" />
+    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="scala3 other new features">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/explicit_nulls.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/optional_braces.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/safe_initialization.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/targetname_annotation.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_oher_changed_features/automatic_eta_expansion.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_oher_changed_features/automatic_eta_expansion.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/matchable_trait.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/matchable_trait.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,26 +61,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../sbt14_5/bin/sbt-launch.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dotty" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
   </component>
-  <component name="RunManager" selected="Application.matchable_trati_start">
-    <configuration name="export_clauses_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_other_new_feathures.export_clauses_start" />
-      <module name="scala3-simple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scala3_other_new_feathures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="kind_polymorphism_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_other_new_feathures.kind_polymorphism_start" />
+  <component name="RunManager" selected="Application.safe_initialization_start">
+    <configuration name="explicit_nulls_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_other_new_feathures.explicit_nulls_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
@@ -108,21 +92,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="open_demo_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_other_new_feathures.open.open_demo_start" />
-      <module name="scala3-simple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scala3_other_new_feathures.open.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="transparent_trait_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_other_new_feathures.transparent_trait_start" />
+    <configuration name="optional_braces_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_other_new_feathures.optional_braces_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
@@ -134,26 +105,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration name="safe_initialization_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_other_new_feathures.safe_initialization_start" />
+      <module name="scala3-simple" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scala3_other_new_feathures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="targetname_annotation_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_other_new_feathures.targetname_annotation_start" />
+      <module name="scala3-simple" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scala3_other_new_feathures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.safe_initialization_start" />
+        <item itemvalue="Application.explicit_nulls_start" />
+        <item itemvalue="Application.optional_braces_start" />
+        <item itemvalue="Application.targetname_annotation_start" />
         <item itemvalue="Application.matchable_trati_start" />
-        <item itemvalue="Application.kind_polymorphism_start" />
-        <item itemvalue="Application.open_demo_start" />
-        <item itemvalue="Application.export_clauses_start" />
-        <item itemvalue="Application.transparent_trait_start" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +169,8 @@
       <workItem from="1611367615361" duration="28266000" />
       <workItem from="1611495798977" duration="9163000" />
       <workItem from="1611543840555" duration="13562000" />
-      <workItem from="1611627777303" duration="20938000" />
+      <workItem from="1611627777303" duration="21270000" />
+      <workItem from="1611712841947" duration="20690000" />
     </task>
     <task id="LOCAL-00001" summary="scala3_book首次学习,并持之以恒">
       <created>1611237212575</created>
@@ -372,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611651658498</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="scala3 other new features">
+      <created>1611677354360</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1611677354360</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,7 +394,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ch02 generic_class" />
     <MESSAGE value="ch03_variance" />
     <MESSAGE value="ch04 Upper and lower type bounds" />
     <MESSAGE value="ch05  Polymorphhic methods" />
@@ -416,7 +418,8 @@
     <MESSAGE value="event bus update" />
     <MESSAGE value="scala3 contextual abstraction update" />
     <MESSAGE value="scala3 other changed features" />
-    <option name="LAST_COMMIT_MESSAGE" value="scala3 other changed features" />
+    <MESSAGE value="scala3 other new features" />
+    <option name="LAST_COMMIT_MESSAGE" value="scala3 other new features" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
