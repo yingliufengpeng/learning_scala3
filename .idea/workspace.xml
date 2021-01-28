@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="scala3 other new features">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/explicit_nulls.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/optional_braces.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/safe_initialization.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/targetname_annotation.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_metaprogrmming/inline_prog.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/matchable_trait.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_new_feathures/matchable_trait.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +27,7 @@
       <list>
         <option value="Scala Worksheet" />
         <option value="Package Object" />
+        <option value="Scala Object" />
       </list>
     </option>
   </component>
@@ -65,13 +61,13 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
   </component>
-  <component name="RunManager" selected="Application.safe_initialization_start">
-    <configuration name="explicit_nulls_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_other_new_feathures.explicit_nulls_start" />
+  <component name="RunManager">
+    <configuration name="inline_start  " type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_metaprogrmming.inline_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scala3_other_new_feathures.*" />
+          <option name="PATTERN" value="scala3_metaprogrmming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,76 +75,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="matchable_trati_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_other_new_feathures.matchable_trati_start" />
-      <module name="scala3-simple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scala3_other_new_feathures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="optional_braces_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_other_new_feathures.optional_braces_start" />
-      <module name="scala3-simple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scala3_other_new_feathures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="safe_initialization_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_other_new_feathures.safe_initialization_start" />
-      <module name="scala3-simple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scala3_other_new_feathures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="targetname_annotation_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_other_new_feathures.targetname_annotation_start" />
-      <module name="scala3-simple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scala3_other_new_feathures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.safe_initialization_start" />
-        <item itemvalue="Application.explicit_nulls_start" />
-        <item itemvalue="Application.optional_braces_start" />
-        <item itemvalue="Application.targetname_annotation_start" />
-        <item itemvalue="Application.matchable_trati_start" />
+        <item itemvalue="Application.inline_start  " />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +112,8 @@
       <workItem from="1611495798977" duration="9163000" />
       <workItem from="1611543840555" duration="13562000" />
       <workItem from="1611627777303" duration="21270000" />
-      <workItem from="1611712841947" duration="20690000" />
+      <workItem from="1611712841947" duration="20797000" />
+      <workItem from="1611813669408" duration="17751000" />
     </task>
     <task id="LOCAL-00001" summary="scala3_book首次学习,并持之以恒">
       <created>1611237212575</created>
@@ -375,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611677354360</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="scala3 other new features">
+      <created>1611764946692</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1611764946692</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
