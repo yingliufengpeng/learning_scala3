@@ -197,7 +197,7 @@ object macros {
       //  That is, we have `x: Expr[t]` and `given Type[t]`, for some (unknow) type `t`. 
       //    
   
-  extension (inline sc: StringContext)
+  extension (inline  sc: StringContext)
     inline def showMe(inline args: Any*): String = ${ showMeExpr('sc,'args) }
   
   trait Show[-T]:
@@ -307,7 +307,7 @@ object macros {
     // Type[T] is abstract type tree 
 //    val rr3 = summon[Type[List[Int]]]
     
- 
+     
  
     
   }

@@ -4,11 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="scala FAQ">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_metaprogrmming/macros.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.bsp/sbt.json" beforeDir="false" afterPath="$PROJECT_DIR$/.bsp/sbt.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
+    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="scala macros">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_google_protobuf_protobuf_java_3_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__net_java_dev_jna_jna_5_3_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_jline_jline_reader_3_15_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_jline_jline_terminal_3_15_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_jline_jline_terminal_jna_3_15_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_asm_7_3_1_scala_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala3_compiler_3_0_0_M3_3_0_0_M3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala3_interfaces_3_0_0_M3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala3_staging_3_0_0_M3_3_0_0_M3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_tasty_core_3_0_0_M3_3_0_0_M3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_sbt_compiler_interface_1_3_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_sbt_util_interface_1_3_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_metaprogrmming/runtime_multi_stage.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/scala3-simple-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/scala3-simple-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/scala3-simple.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/scala3-simple.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_metaprogrmming/macros.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_metaprogrmming/macros.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +77,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
   </component>
-  <component name="RunManager" selected="Application.macros_satrt">
+  <component name="RunManager" selected="Application.runtime_multi_stage_start">
     <configuration name="FAQ_start" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="scala3_metaprogrmming.FAQ_start" />
       <module name="scala3-simple" />
@@ -103,6 +117,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="runtime_multi_stage_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_metaprogrmming.runtime_multi_stage_start" />
+      <module name="scala3-simple" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scala3_metaprogrmming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="scala_comple_time_operations_start" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="scala3_metaprogrmming.scala_comple_time_operations_start" />
       <module name="scala3-simple" />
@@ -116,15 +143,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,9 +159,11 @@
       <item itemvalue="Application.scala_comple_time_operations_start" />
       <item itemvalue="Application.FAQ_start" />
       <item itemvalue="Application.macros_satrt" />
+      <item itemvalue="Application.runtime_multi_stage_start" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.runtime_multi_stage_start" />
         <item itemvalue="Application.macros_satrt" />
         <item itemvalue="Application.FAQ_start" />
         <item itemvalue="Application.scala_comple_time_operations_start" />
@@ -165,7 +192,8 @@
       <workItem from="1611712841947" duration="20797000" />
       <workItem from="1611813669408" duration="24235000" />
       <workItem from="1611884472844" duration="4368000" />
-      <workItem from="1611889887040" duration="17358000" />
+      <workItem from="1611889887040" duration="17671000" />
+      <workItem from="1611976492512" duration="5271000" />
     </task>
     <task id="LOCAL-00001" summary="scala3_book首次学习,并持之以恒">
       <created>1611237212575</created>
@@ -391,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611850615036</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="scala macros">
+      <created>1611938313686</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1611938313686</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,7 +445,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ch05  Polymorphhic methods" />
     <MESSAGE value="ch06 Intersection type" />
     <MESSAGE value="ch07 Union type" />
     <MESSAGE value="ch08 type lambdas" />
@@ -435,7 +469,8 @@
     <MESSAGE value="scala3 other new features" />
     <MESSAGE value="scala inline" />
     <MESSAGE value="scala FAQ" />
-    <option name="LAST_COMMIT_MESSAGE" value="scala FAQ" />
+    <MESSAGE value="scala macros" />
+    <option name="LAST_COMMIT_MESSAGE" value="scala macros" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
