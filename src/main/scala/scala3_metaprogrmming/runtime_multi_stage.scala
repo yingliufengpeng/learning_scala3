@@ -24,9 +24,10 @@ object runtime_multi_stage {
     
     
     // make available the necessary compiler for runtime code generation 
-    //    given staging.Compiler = staging.Compiler.make(getClass.getName)
+//    given staging.Compiler = staging.Compiler.make(getClass.getName)
     
     @main def runtime_multi_stage_start(): Unit = {
-      
+        val r = 3
+        println(f"r is ${r.getClass.getName}")
     }
 }

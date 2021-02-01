@@ -2,4 +2,4 @@
 *.log
 *.tasty
 target
-project/target
+project/target/

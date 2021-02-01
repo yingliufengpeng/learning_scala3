@@ -13,6 +13,16 @@
     val r = 20
     r.show 
     "wangpeng".show 
+    
+    
+    given Int = 3
+    given Double = 45
+    
+    val rr = summon[Int]
+    val rr2 = summon[Double]
+    
+    println(f"rr is ${rr}, rr2 is ${rr2}")
+    
  
 }
 
