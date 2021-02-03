@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="基本的json pretty打印完工">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_decorator/macros.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch01_the_FP.scala" afterDir="false" />
+    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="ch01版本 基本学习了function programming的用法">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch02_getting_start_with_programming.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_function_reactive_programming/async_await_demo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_reactive_programming/async_await_demo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/Test1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/Test1.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_oher_changed_features/automatic_eta_expansion.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_changed_features/automatic_eta_expansion.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_oher_changed_features/numeric_literals.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_changed_features/numeric_literals.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_oher_changed_features/rules_for_operators.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_changed_features/rules_for_operators.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_oher_changed_features/structurl_types.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_other_changed_features/structurl_types.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
   </component>
-  <component name="RunManager" selected="Application.the_FP">
+  <component name="RunManager" selected="Application.ch02_getting_start_with_programming_start">
     <configuration name="async_await_demo_start" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="scala3_function_reactive_programming.async_await_demo_start" />
       <module name="scala3-simple" />
@@ -78,12 +79,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="event_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_function_reactive_programming.event_start" />
+    <configuration name="ch02_getting_start_with_programming" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.ch02_getting_start_with_programming" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scala3_function_reactive_programming.*" />
+          <option name="PATTERN" value="scala3_function_programming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tests_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_decorator.tests_start" />
+    <configuration name="ch02_getting_start_with_programming_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.ch02_getting_start_with_programming_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scala3_decorator.*" />
+          <option name="PATTERN" value="scala3_function_programming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,19 +140,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.event_start" />
       <item itemvalue="Application.async_await_demo_start" />
-      <item itemvalue="Application.tests_start" />
       <item itemvalue="JUnit.Test1.t1" />
       <item itemvalue="Application.the_FP" />
+      <item itemvalue="Application.ch02_getting_start_with_programming" />
+      <item itemvalue="Application.ch02_getting_start_with_programming_start" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ch02_getting_start_with_programming_start" />
+        <item itemvalue="Application.ch02_getting_start_with_programming" />
         <item itemvalue="Application.the_FP" />
         <item itemvalue="JUnit.Test1.t1" />
         <item itemvalue="Application.async_await_demo_start" />
-        <item itemvalue="Application.tests_start" />
-        <item itemvalue="Application.event_start" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +183,7 @@
       <workItem from="1612155734616" duration="217000" />
       <workItem from="1612155978344" duration="27668000" />
       <workItem from="1612233868394" duration="9976000" />
-      <workItem from="1612320007968" duration="4752000" />
+      <workItem from="1612320007968" duration="19410000" />
     </task>
     <task id="LOCAL-00001" summary="scala3_book首次学习,并持之以恒">
       <created>1611237212575</created>
@@ -429,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612197582908</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="ch01版本 基本学习了function programming的用法">
+      <created>1612340582662</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1612340582662</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,7 +456,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ch08 type lambdas" />
     <MESSAGE value="ch09 Given instance and Using types" />
     <MESSAGE value="ch10 extension methods" />
     <MESSAGE value="ch11 type class" />
@@ -473,7 +480,8 @@
     <MESSAGE value="scala macros" />
     <MESSAGE value="scala runtime multi stage" />
     <MESSAGE value="基本的json pretty打印完工" />
-    <option name="LAST_COMMIT_MESSAGE" value="基本的json pretty打印完工" />
+    <MESSAGE value="ch01版本 基本学习了function programming的用法" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch01版本 基本学习了function programming的用法" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

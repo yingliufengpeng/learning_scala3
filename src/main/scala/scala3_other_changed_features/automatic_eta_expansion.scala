@@ -1,4 +1,4 @@
-package scala3_oher_changed_features
+package scala3_other_changed_features
 
 object automatic_eta_expansion {
    
