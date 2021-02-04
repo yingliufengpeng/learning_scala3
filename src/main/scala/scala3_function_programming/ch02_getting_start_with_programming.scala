@@ -5,7 +5,7 @@ object ch02_getting_start_with_programming {
   
   def sum(list: Int*): Int =  
     def go(index: Int = 0, acc: Int = 0): Int =
-      if index >= list.length - 1 then
+      if index >= list.length then
         acc
       else
         go(index + 1, acc + list(index))  
@@ -112,6 +112,9 @@ object ch02_getting_start_with_programming {
     
     val r6 = isSorted(Array(1, 2, 4, 6), (left, right) => left < right)
     println(s"r6 is $r6")
+    
+    val r7 = sum(1,2,3,4)
+    println(s"r7 is $r7")
     
   }
 
