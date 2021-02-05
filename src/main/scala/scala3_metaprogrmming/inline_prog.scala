@@ -56,7 +56,7 @@ object inline_prog {
     // That is, the call to logged will be replaced by the body of the method. The provied arguments are statically 
     // substituted for the parameters of logged, correspondingly. Therefore, the compiler inlines the following call
     
-    logged(4, {4; 5; 6; "kkk"})(doSomething)
+    logged(4, {  "kkk"})(doSomething)
     // and rewrites it to 
     val level = 4
     val message = {
