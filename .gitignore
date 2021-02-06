@@ -3,3 +3,4 @@
 *.tasty
 target
 project/target/
+project/project
