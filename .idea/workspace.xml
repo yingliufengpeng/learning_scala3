@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="ch04 Handing Errors">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch05_strictness_and_laziness.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch05_strictness_laziness_stream.scala" afterDir="false" />
+    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="ch05 Strictness and Laziness">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch06_general_state.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch06_purely_better_api_for_state_actioins.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch06_purely_functional_random_number.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,9 +63,9 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
   </component>
-  <component name="RunManager" selected="Application.strict_laziness_stream_start">
-    <configuration name="handing_errorss_with_either_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.handing_errorss_with_either_start" />
+  <component name="RunManager" selected="Application.general_start">
+    <configuration name="better_api_for_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.better_api_for_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
@@ -76,8 +77,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="handing_erros_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.handing_erros_start" />
+    <configuration name="general_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.general_start" />
+      <module name="scala3-simple" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scala3_function_programming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="purely_functional_random_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.purely_functional_random_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
@@ -115,44 +129,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tree_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.tree_start" />
-      <module name="scala3-simple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scala3_function_programming.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.tree_start" />
-      <item itemvalue="Application.handing_erros_start" />
-      <item itemvalue="Application.handing_errorss_with_either_start" />
       <item itemvalue="Application.stritness_and_laziness_start" />
       <item itemvalue="Application.strict_laziness_stream_start" />
+      <item itemvalue="Application.purely_functional_random_start" />
+      <item itemvalue="Application.better_api_for_start" />
+      <item itemvalue="Application.general_start" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.general_start" />
+        <item itemvalue="Application.better_api_for_start" />
+        <item itemvalue="Application.purely_functional_random_start" />
         <item itemvalue="Application.strict_laziness_stream_start" />
         <item itemvalue="Application.stritness_and_laziness_start" />
-        <item itemvalue="Application.handing_errorss_with_either_start" />
-        <item itemvalue="Application.handing_erros_start" />
-        <item itemvalue="Application.tree_start" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +189,8 @@
       <workItem from="1612320007968" duration="32725000" />
       <workItem from="1612403538747" duration="30267000" />
       <workItem from="1612491924929" duration="2246000" />
-      <workItem from="1612494893849" duration="43862000" />
+      <workItem from="1612494893849" duration="44023000" />
+      <workItem from="1612578752722" duration="30756000" />
     </task>
     <task id="LOCAL-00001" summary="scala3_book首次学习,并持之以恒">
       <created>1611237212575</created>
@@ -461,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612506659772</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="ch05 Strictness and Laziness">
+      <created>1612550637434</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1612550637434</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +491,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ch12 multiversal equality" />
     <MESSAGE value="ch13 Opaque types" />
     <MESSAGE value="ch14 Open Class" />
     <MESSAGE value="ch17 polymorphic function types" />
@@ -505,7 +515,8 @@
     <MESSAGE value="ch02 Getting statred with functional programming" />
     <MESSAGE value="ch03 Functional data structures" />
     <MESSAGE value="ch04 Handing Errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch04 Handing Errors" />
+    <MESSAGE value="ch05 Strictness and Laziness" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch05 Strictness and Laziness" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
