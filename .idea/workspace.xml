@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="ch05 Strictness and Laziness" />
+    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="分支删除干净">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch07_purely_funtiaonal_parallelism.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +79,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
   </component>
-  <component name="RunManager" selected="Application.event_start">
+  <component name="RunManager" selected="Application.purley_functional_start">
     <configuration name="better_api_for_start" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="scala3_function_programming.better_api_for_start" />
       <module name="scala3-simple" />
@@ -128,8 +132,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="strict_laziness_stream_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.strict_laziness_stream_start" />
+    <configuration name="purley_functional_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.purley_functional_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
@@ -141,31 +145,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.strict_laziness_stream_start" />
       <item itemvalue="Application.purely_functional_random_start" />
       <item itemvalue="Application.better_api_for_start" />
       <item itemvalue="Application.general_start" />
       <item itemvalue="Application.event_start" />
+      <item itemvalue="Application.purley_functional_start" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.event_start" />
+        <item itemvalue="Application.purley_functional_start" />
         <item itemvalue="Application.general_start" />
+        <item itemvalue="Application.event_start" />
         <item itemvalue="Application.better_api_for_start" />
         <item itemvalue="Application.purely_functional_random_start" />
-        <item itemvalue="Application.strict_laziness_stream_start" />
       </list>
     </recent_temporary>
   </component>
@@ -201,6 +207,7 @@
       <workItem from="1612491924929" duration="2246000" />
       <workItem from="1612494893849" duration="44023000" />
       <workItem from="1612578752722" duration="30756000" />
+      <workItem from="1612662962563" duration="29807000" />
     </task>
     <task id="LOCAL-00001" summary="scala3_book首次学习,并持之以恒">
       <created>1611237212575</created>
