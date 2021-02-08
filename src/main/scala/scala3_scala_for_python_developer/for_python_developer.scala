@@ -1,9 +1,57 @@
 package scala3_scala_for_python_developer
+import reflect.Selectable.reflectiveSelectable
 
 object for_python_developer {
+
+  trait Consumer[-T]:
+    def consume(v: T): Unit
+
+  trait Producer[+T]:
+    def producer: T
+  
+  type Record = {
+    def show: Int 
+  }
+  
+  trait A: 
+    def show: Int 
+  class B:
+    def show: Int = 3
+  
+  
+  def show_record(r: Record): Unit = {
+    r.show
+  }
+  
+  def fun_record(f: Int => Int) =
+    new {
+      def show(x: Int): Int = f(x)
+    }.asInstanceOf[Record]
+  
+  def test2(): Unit = {
+    show_record(fun_record(a => 3))
+  }
+  
+
+  type Cons = [T] =>> T => Unit
+  type Pro = [T] =>> () => T
+  type P[+T] = Int => (Int => T)
+  
+  def test1(): Unit = {
+    test2()
+    
+    val r: Cons[Int] = println(_)
+    val r2: Pro[Int] = () => 3
+    
+    r(33)
+    r2()
+    
+  }
   
   
   @main def python_developer_start(): Unit = {
+    
+    test1()
     
     val movies = Map(
       "Toy Story" -> 8.3,
@@ -98,7 +146,22 @@ object for_python_developer {
         i <- 1 to 3 
       yield 
         i * 10
+        
     
-
+    val x7 = 
+      try 
+        1 / 0
+      catch 
+        case e: Exception => 3    
+    
+    println(f"x7 is $x7")
+    
+    object ** :
+      def unapply(ab: (Int, Int)): Option[Int] = Some(4)
+    
+    (4, 54) match
+      case **(a) => println(f"a is $a")
+      case _ => println("error")
+    
   }
 }

@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="分支删除干净">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch07_purely_funtiaonal_parallelism.scala" afterDir="false" />
+    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="ch07 Purely functional parallelism">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch08_property_based_testing.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch07_purely_funtiaonal_parallelism.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch07_purely_funtiaonal_parallelism.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_scala_for_python_developer/for_python_developer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_scala_for_python_developer/for_python_developer.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,20 +81,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
   </component>
-  <component name="RunManager" selected="Application.purley_functional_start">
-    <configuration name="better_api_for_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.better_api_for_start" />
-      <module name="scala3-simple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scala3_function_programming.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.property_based_testing_start">
     <configuration name="event_start" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="scala3_function_reactive_programming.event_start" />
       <module name="scala3-simple" />
@@ -119,8 +108,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="purely_functional_random_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.purely_functional_random_start" />
+    <configuration name="property_based_testing_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.property_based_testing_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
@@ -145,33 +134,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration name="python_developer_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_scala_for_python_developer.python_developer_start" />
+      <module name="scala3-simple" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scala3_scala_for_python_developer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.purely_functional_random_start" />
-      <item itemvalue="Application.better_api_for_start" />
       <item itemvalue="Application.general_start" />
       <item itemvalue="Application.event_start" />
       <item itemvalue="Application.purley_functional_start" />
+      <item itemvalue="Application.property_based_testing_start" />
+      <item itemvalue="Application.python_developer_start" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.property_based_testing_start" />
+        <item itemvalue="Application.python_developer_start" />
         <item itemvalue="Application.purley_functional_start" />
         <item itemvalue="Application.general_start" />
         <item itemvalue="Application.event_start" />
-        <item itemvalue="Application.better_api_for_start" />
-        <item itemvalue="Application.purely_functional_random_start" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +207,8 @@
       <workItem from="1612491924929" duration="2246000" />
       <workItem from="1612494893849" duration="44023000" />
       <workItem from="1612578752722" duration="30756000" />
-      <workItem from="1612662962563" duration="29807000" />
+      <workItem from="1612662962563" duration="34090000" />
+      <workItem from="1612754069042" duration="40949000" />
     </task>
     <task id="LOCAL-00001" summary="scala3_book首次学习,并持之以恒">
       <created>1611237212575</created>
@@ -489,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612550637434</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="ch07 Purely functional parallelism">
+      <created>1612706668136</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1612706668136</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,7 +516,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ch13 Opaque types" />
     <MESSAGE value="ch14 Open Class" />
     <MESSAGE value="ch17 polymorphic function types" />
     <MESSAGE value="ch18 context bounds" />
@@ -533,7 +540,8 @@
     <MESSAGE value="ch03 Functional data structures" />
     <MESSAGE value="ch04 Handing Errors" />
     <MESSAGE value="ch05 Strictness and Laziness" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch05 Strictness and Laziness" />
+    <MESSAGE value="ch07 Purely functional parallelism" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch07 Purely functional parallelism" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -544,5 +552,10 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/scala3_simple$property_based_testing_start.ic" NAME="property_based_testing_start Coverage Results" MODIFIED="1612782556074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>scala3_function_programming.*</FILTER>
+    </SUITE>
   </component>
 </project>

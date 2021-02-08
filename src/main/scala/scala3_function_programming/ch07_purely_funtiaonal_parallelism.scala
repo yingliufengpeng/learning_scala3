@@ -19,6 +19,10 @@ object ch07_purely_funtiaonal_parallelism {
       
   
   object Parallel:
+//    import concurrent.{Await, ExecutionContext, Future}
+//    import concurrent.ExecutionContext.Implicits.global
+//    given ExecutionContext = global
+//    import concurrent.duration._
     type Par = [A] =>> ExecutionContext ?=> Future[A] // 我们这里使用scala3的最新的上下文绑定的写法
   
     
@@ -59,6 +63,7 @@ object ch07_purely_funtiaonal_parallelism {
         val (l, r) = ints.splitAt(ints.length / 2)
         (fork(inner_sum(l)) map2 fork(inner_sum(r)))(_ + _)
         
+    
     
     def sum(ints: IndexedSeq[Int]): Int =
       Await.result(inner_sum(ints), Duration.Inf)
@@ -114,8 +119,8 @@ object ch07_purely_funtiaonal_parallelism {
       fold(ints)(Int.MaxValue)(math.min)
       
     
-    def equal[A](pa: Par[A], pb: Par[A]): Boolean =
-      pa.run == pb.run 
+    def equal[A](pa: Par[A], pb: Par[A]): Par[Boolean] =
+      (pa map2 pb)(_ == _) 
       
     
     def test(): Unit = {
@@ -136,10 +141,12 @@ object ch07_purely_funtiaonal_parallelism {
       println(f"r6 is $r6")
       
     }
+   
     
     
     extension [A, B, C](par: Par[A]) 
       def run: A = par.value.get.get
+      def get: A = Await.result(par, Duration.Inf)
       def map(f: A => B): Par[B] = flatMap(e => Parallel.lazyUnit(f(e))) 
       def flatMap(f: A => Par[B]): Par[B] = Parallel.fork(f(par.run))
       def map2(parb: Par[B])(f: (A, B) => C): Par[C] =
