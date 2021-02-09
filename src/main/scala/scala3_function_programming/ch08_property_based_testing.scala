@@ -97,9 +97,11 @@ object ch08_property_based_testing {
     
     def flatMap[B](f: A => Gen[B]): Gen[B] =
       Gen(sample.flatMap(f(_).sample))
+
+    def **[B](b: Gen[B]): Gen[(A, B)] = Gen.**(self, b)
     
-
-
+    
+    
     // 从这个函数的签名来看,这个应该是无穷的
     def unsized: SGen[A] =
       SGen {
@@ -150,7 +152,7 @@ object ch08_property_based_testing {
         s"stack trace: \n ${e.getStackTrace.mkString("\n")}"
         
   object Gen:
-
+    self =>
     def choose(start: Int, stopExclsive: Int): Gen[Int] = {
       Gen(State {
         rng =>
@@ -193,9 +195,10 @@ object ch08_property_based_testing {
         f(i, j)
         
     
-    def **[A, B](a: Gen[A], b: Gen[B]): Gen[(A, B)] =
+    def ** [A, B](a: Gen[A], b: Gen[B]): Gen[(A, B)] =
       map2(a, b)((_, _))
       
+    
     
     def genSTringIntFn(g: Gen[Int]): Gen[String => Int] =
       g map (i => s => i)
@@ -208,6 +211,9 @@ object ch08_property_based_testing {
     
     def double: Gen[Double] =
       int.map(_.toDouble)
+      
+    def string: Gen[String] =
+      int.map(_.toString)
   
   
     def boolean: Gen[Boolean] =
