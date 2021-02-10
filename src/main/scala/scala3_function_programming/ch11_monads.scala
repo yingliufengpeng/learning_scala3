@@ -144,7 +144,7 @@ object ch11_monads {
 
     implicit def readerMonad[R]: Monad[[A] =>> Reader[R, A]] = new Monad[[A] =>> Reader[R, A]] {
       type Re = [A] =>> Reader[R, A]
-      def unit[A](a: => A): Reader[R,A] = ???
+      def unit[A](a: => A): Reader[R,A] = Reader(r => a)
 
       extension [A, B](fa: Re[A])
         def flatMap(f: A => Re[B]): Re[B] =
