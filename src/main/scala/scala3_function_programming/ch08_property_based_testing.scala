@@ -99,8 +99,7 @@ object ch08_property_based_testing {
       Gen(sample.flatMap(f(_).sample))
 
     def **[B](b: Gen[B]): Gen[(A, B)] = Gen.**(self, b)
-    
-    
+     
     
     // 从这个函数的签名来看,这个应该是无穷的
     def unsized: SGen[A] =
@@ -161,7 +160,6 @@ object ch08_property_based_testing {
           else
             val (r0, rng0) = rng.nextInt
             val r1 = math.abs(r0) % (stopExclsive - start) + start
-//            println(f"r1 is $r1")
             (r1, rng0)
       })
     }
@@ -214,7 +212,9 @@ object ch08_property_based_testing {
       
     def string: Gen[String] =
       int.map(_.toString)
-  
+      
+    def stringN(n: Int): Gen[String] =
+      string.map(s => if s.length >= n then s.substring(0, n) else s + " " * (n - s.length))
   
     def boolean: Gen[Boolean] =
       choose(0, 2)
@@ -239,7 +239,6 @@ object ch08_property_based_testing {
             case (Falsifield(s0, index0, _), Passed) => Falsifield(s0, index0) 
             case (Passed, Falsifield(s1, index1, _)) => Falsifield(s1, index1)
             case (Falsifield(s0, index0, _), Falsifield(s1, index1, _)) => Falsifield(s"$s0\n$s1", index0 + index1)
-         
       }
        
     
