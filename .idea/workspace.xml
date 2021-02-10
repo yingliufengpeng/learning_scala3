@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="ch08 Property-based testing">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch09_parser_combinators.scala" afterDir="false" />
+    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="ch09 Parser combinators">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch10_monoids.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch08_property_based_testing.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch08_property_based_testing.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,9 +79,9 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
   </component>
-  <component name="RunManager" selected="Application.parser_combinator_start">
-    <configuration name="general_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.general_start" />
+  <component name="RunManager" selected="Application.monoids_start">
+    <configuration name="monoids_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.monoids_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
@@ -146,33 +145,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.general_start" />
       <item itemvalue="Application.purley_functional_start" />
       <item itemvalue="Application.property_based_testing_start" />
       <item itemvalue="Application.python_developer_start" />
       <item itemvalue="Application.parser_combinator_start" />
+      <item itemvalue="Application.monoids_start" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.monoids_start" />
         <item itemvalue="Application.parser_combinator_start" />
         <item itemvalue="Application.property_based_testing_start" />
         <item itemvalue="Application.python_developer_start" />
         <item itemvalue="Application.purley_functional_start" />
-        <item itemvalue="Application.general_start" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +207,8 @@
       <workItem from="1612578752722" duration="30756000" />
       <workItem from="1612662962563" duration="34090000" />
       <workItem from="1612754069042" duration="41397000" />
-      <workItem from="1612837264112" duration="30704000" />
+      <workItem from="1612837264112" duration="31067000" />
+      <workItem from="1612922067292" duration="18605000" />
     </task>
     <task id="LOCAL-00001" summary="scala3_book首次学习,并持之以恒">
       <created>1611237212575</created>
@@ -506,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612802941612</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="ch09 Parser combinators">
+      <created>1612888427817</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1612888427817</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,7 +530,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ch17 polymorphic function types" />
     <MESSAGE value="ch18 context bounds" />
     <MESSAGE value="ch19 context function" />
     <MESSAGE value="ch20 inner_class abstract type members" />
@@ -550,7 +554,8 @@
     <MESSAGE value="ch05 Strictness and Laziness" />
     <MESSAGE value="ch07 Purely functional parallelism" />
     <MESSAGE value="ch08 Property-based testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch08 Property-based testing" />
+    <MESSAGE value="ch09 Parser combinators" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch09 Parser combinators" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
