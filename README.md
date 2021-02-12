@@ -26,10 +26,13 @@ it is to be odd: 奇怪
 in all contexts: 在所有的情况下
 take the approach of: 采取
 conjured up: 想象
-could have done: 本应该做的,但是没有继续去做be free to
+could have done: 本应该做的,但是没有继续去做
 be free to: 自由的
 stipulate: 规定,明确要求
 meander: 蜿蜒而行
+makes effects first class: 效果一流
+amount to: 等同,接近
+
 
 exercise 7.3 改动量有些大,暂时不改
 exercise 7.7 需要阅读相关资料
@@ -42,3 +45,4 @@ exercise 8.17 暂不做
 exercise 8.18 思维思考题
 exercise 8.19 暂不做
 exercise 10.8 暂不做
+exercise 12.20 hard

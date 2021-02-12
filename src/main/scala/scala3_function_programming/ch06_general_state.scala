@@ -40,7 +40,7 @@ object ch06_general_state {
       }
       
     
-    def get: State[S, S] = State(s => (s, s))
+    def get[S]: State[S, S] = State(s => (s, s))
     
     
     def set(s: S): State[S, Unit] = State(_ => ((), s))
@@ -59,6 +59,10 @@ object ch06_general_state {
   
   object State:
     def unit[S, A](v: A): State[S, A] = State(s => (v, s))
+    
+    def get[S]: State[S, S] = run(s => (s, s))
+    
+    def set[S](v: S): State[S, S] = run(s => (s, v ))
     
     
     def run[S, A](f: S => (A, S)) = State(f)

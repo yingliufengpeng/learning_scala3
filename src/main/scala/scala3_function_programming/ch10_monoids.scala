@@ -1,6 +1,7 @@
 package scala3_function_programming
 
 import scala3_function_programming.ch08_property_based_testing.{Gen, Prop}
+import scala3_function_programming.ch06_general_state.{State}
 
 object ch10_monoids {
   
@@ -14,7 +15,7 @@ object ch10_monoids {
       def bin(a2: A): A = self.op(a1, a2)
   
   trait Foldable[F[_]]:
-    def foldRight[A, B](as: F[A])(z: B)(f: (A, B) => B): B 
+    def foldRight[A, B](as: F[A])(z: B)(f: (A, B) => B): B = ???
     
     def foldLeft[A, B](as: F[A])(z: B)(f: (B, A) => B): B =
       foldRight(as)(identity[B]) { case (a, acc) =>
@@ -149,6 +150,21 @@ object ch10_monoids {
         }
     }
     
+    def stateMonoid[S, A: Monoid]: Monoid[State[S, A]] = new Monoid[State[S, A]] {
+      val ma = summon[Monoid[A]]
+      override def zero: State[S, A] = State(s => (ma.zero, s))
+
+      override def op(a1: State[S, A], a2: State[S, A]): State[S, A] = {
+        for 
+          i <- a1 
+          j <- a2
+        yield 
+          ma.op(i, j)
+      }
+    }
+      
+   
+    
     def stringCount(input: String): WC =
       val r = summon[Monoid[WC]] 
       if input == "" then 
@@ -249,11 +265,7 @@ object ch10_monoids {
         gen.forAll { v =>
           m.op(m.zero, v) == v == m.op(v, m.zero)
         }
-      
-      
-    
-    
-
+   
   end Monoid
  
   

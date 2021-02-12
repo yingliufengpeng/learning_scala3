@@ -15,7 +15,7 @@ object ch11_monads {
         case Right(fb) => map(fb)(Right(_))
         
     extension [A, B](fa: F[A])
-      def map(f: A => B): F[B] 
+      def map(f: A => B): F[B] // 这个只是代表着函数签名的写法
   
   object Functor:
     val r = 110
