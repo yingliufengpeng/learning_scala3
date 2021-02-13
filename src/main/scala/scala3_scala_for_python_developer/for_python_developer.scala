@@ -2,7 +2,31 @@ package scala3_scala_for_python_developer
 import reflect.Selectable.reflectiveSelectable
 
 object for_python_developer {
+  type Par = [X] =>> Future[X]
   
+  trait Future[+A]:
+    def apply(k: A => Unit): Unit
+  
+  trait Source {
+    def readBytes(
+                   numBytes: Int,
+                   callback: Either[Throwable, Array[Byte]] => Unit): Unit
+  }
+  
+  def async[A](run: (A => Unit) => Unit): Par[A] = new Future {
+    def apply(k: A => Unit) = run(k)
+  }
+
+  def nonblockingRead(source: Source, numBytes: Int): Par[Either[Throwable,Array[Byte]]] =  
+    val r = async { (cb: Either[Throwable,Array[Byte]] => Unit) =>
+      source.readBytes(numBytes, cb)
+    }
+    r{ a => 
+      println("kkk")
+    }
+    r
+  
+
   class Su:
     def show = 300
   

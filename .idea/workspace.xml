@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="ch10 Monoids">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch13_external_effects_and_io.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch13_external_effects_and_io2.scala" afterDir="false" />
+    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="ch13 External effects and I/O 暂告一段落,有机会重新思考">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch12_applicative_and_traversable_functors.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch12_applicative_and_traversable_functors.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_scala_for_python_developer/for_python_developer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_scala_for_python_developer/for_python_developer.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -214,7 +210,7 @@
       <workItem from="1612922067292" duration="35588000" />
       <workItem from="1613010945949" duration="24794000" />
       <workItem from="1613113520266" duration="22251000" />
-      <workItem from="1613185691503" duration="31365000" />
+      <workItem from="1613185691503" duration="32442000" />
     </task>
     <task id="LOCAL-00001" summary="scala3_book首次学习,并持之以恒">
       <created>1611237212575</created>
@@ -524,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612958991524</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="ch13 External effects and I/O 暂告一段落,有机会重新思考">
+      <created>1613225697201</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1613225697201</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,7 +546,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ch19 context function" />
     <MESSAGE value="ch20 inner_class abstract type members" />
     <MESSAGE value="ch15 match types" />
     <MESSAGE value="scala3 concurrency" />
@@ -568,7 +570,8 @@
     <MESSAGE value="ch08 Property-based testing" />
     <MESSAGE value="ch09 Parser combinators" />
     <MESSAGE value="ch10 Monoids" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch10 Monoids" />
+    <MESSAGE value="ch13 External effects and I/O 暂告一段落,有机会重新思考" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch13 External effects and I/O 暂告一段落,有机会重新思考" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
