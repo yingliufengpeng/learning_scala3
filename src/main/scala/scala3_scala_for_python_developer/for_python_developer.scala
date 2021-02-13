@@ -2,6 +2,17 @@ package scala3_scala_for_python_developer
 import reflect.Selectable.reflectiveSelectable
 
 object for_python_developer {
+  
+  class Su:
+    def show = 300
+  
+  extension (a: Su)
+    def show = 4
+  
+  def test_su(): Unit = {
+    val r = Su() 
+    println(f"r is ${r.show}")
+  }
 
   trait Consumer[-T]:
     def consume(v: T): Unit
@@ -29,7 +40,7 @@ object for_python_developer {
     }.asInstanceOf[Record]
   
   def test2(): Unit = {
-    show_record(fun_record(a => 3))
+//    show_record(fun_record(a => 3))
   }
   
 
@@ -50,7 +61,7 @@ object for_python_developer {
   
   
   @main def python_developer_start(): Unit = {
-    
+    test_su()
     test1()
     
     val movies = Map(

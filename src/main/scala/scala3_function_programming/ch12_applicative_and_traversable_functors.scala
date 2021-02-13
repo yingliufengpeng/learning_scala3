@@ -102,6 +102,8 @@ object ch12_applicative_and_traversable_functors {
       def map(f: A => B): F[B] =
         apply(unit(f))(fa)  // 函数签名的具体实现
   
+      def **(fb: F[B]): F[(A, B)] = map2(fa, fb)((_, _))
+  
   type Id = [A] =>> A 
   
   object Applicative:
@@ -136,16 +138,34 @@ object ch12_applicative_and_traversable_functors {
         
   trait Monad[F[_]] extends Applicative[F]:
     
-    def join[A](ffa: F[F[A]]): F[A] =
+    def join[A](ffa: F[F[A]]): F[A] = {
+      println(f"join...")
       ffa flatMap (fa => fa )
-  
+    }
+
     def compose[A, B, C](f: A => F[B], g: B => F[C]): A => F[C] =
       a =>
         f(a) flatMap g
      
     extension [A, B](fa: F[A])
-      def flatMap(f: A => F[B]): F[B] =
+      def flatMap(f: A => F[B]): F[B] = {
+        println("这个方法的优先级很高")
         join(fa map f)
+      }
+
+      def doWhile(cond: A => F[Boolean]): F[Unit] =
+        for 
+          a1 <- fa 
+          ok <- cond(a1)
+          _ <- if ok then doWhile(cond) else unit(())
+        yield 
+          ()  
+          
+      def forever: F[B] =
+        println(f"无限循环???")
+        lazy val t: F[B] = forever
+        fa.flatMap (_ => t)
+  
         
   object Monad:
     def eitherMonad[E]: Monad[[A] =>> Either[E, A]] = new Monad[[A] =>> Either[E, A]] {
@@ -157,6 +177,15 @@ object ch12_applicative_and_traversable_functors {
         case Left(le) => Left(le) 
       
     }
+    
+    // the OptionT monad transformer composes Option with any other monad.
+    case class OptionT[M[_]: Monad, A](value: M[Option[A]]):
+      val m: Monad[M] = summon[Monad[M]]
+      def flatMap[B](f: A => OptionT[M, B]): OptionT[M, B] =
+        OptionT(value flatMap {
+          case None => m.unit(None)
+          case Some(a) => f(a).value
+        })
     
     implicit def stateMonad[S]: Monad[[A] =>> State[S, A]] = new Monad[[A] =>> State[S, A]] {
       type ST = [A] =>> State[S, A]

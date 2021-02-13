@@ -32,6 +32,7 @@ stipulate: 规定,明确要求
 meander: 蜿蜒而行
 makes effects first class: 效果一流
 amount to: 等同,接近
+bake into: 合併
 
 
 exercise 7.3 改动量有些大,暂时不改

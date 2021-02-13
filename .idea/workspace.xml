@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="ch10 Monoids">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch12_applicative_and_traversable_functors.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch13_external_effects_and_io.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch13_external_effects_and_io2.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch06_general_state.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch06_general_state.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch10_monoids.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch10_monoids.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch11_monads.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch11_monads.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch12_applicative_and_traversable_functors.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch12_applicative_and_traversable_functors.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_scala_for_python_developer/for_python_developer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_scala_for_python_developer/for_python_developer.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,33 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
   </component>
-  <component name="RunManager" selected="Application.start">
+  <component name="RunManager" selected="Application.external_effectes_and_io2_start">
+    <configuration name="external_effectes_and_io2_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.external_effectes_and_io2_start" />
+      <module name="scala3-simple" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scala3_function_programming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="external_effects_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.external_effects_start" />
+      <module name="scala3-simple" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scala3_function_programming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="monads_start" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="scala3_function_programming.monads_start" />
       <module name="scala3-simple" />
@@ -96,38 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="monoids_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.monoids_start" />
+    <configuration name="python_developer_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_scala_for_python_developer.python_developer_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scala3_function_programming.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="parser_combinator_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.parser_combinator_start" />
-      <module name="scala3-simple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scala3_function_programming.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="property_based_testing_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.property_based_testing_start" />
-      <module name="scala3-simple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scala3_function_programming.*" />
+          <option name="PATTERN" value="scala3_scala_for_python_developer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,20 +148,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.property_based_testing_start" />
-      <item itemvalue="Application.parser_combinator_start" />
-      <item itemvalue="Application.monoids_start" />
       <item itemvalue="Application.monads_start" />
       <item itemvalue="Application.start" />
+      <item itemvalue="Application.external_effects_start" />
+      <item itemvalue="Application.external_effectes_and_io2_start" />
+      <item itemvalue="Application.python_developer_start" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.external_effectes_and_io2_start" />
         <item itemvalue="Application.start" />
+        <item itemvalue="Application.python_developer_start" />
+        <item itemvalue="Application.external_effects_start" />
         <item itemvalue="Application.monads_start" />
-        <item itemvalue="Application.monoids_start" />
-        <item itemvalue="Application.parser_combinator_start" />
-        <item itemvalue="Application.property_based_testing_start" />
       </list>
     </recent_temporary>
   </component>
@@ -203,6 +214,7 @@
       <workItem from="1612922067292" duration="35588000" />
       <workItem from="1613010945949" duration="24794000" />
       <workItem from="1613113520266" duration="22251000" />
+      <workItem from="1613185691503" duration="31365000" />
     </task>
     <task id="LOCAL-00001" summary="scala3_book首次学习,并持之以恒">
       <created>1611237212575</created>
