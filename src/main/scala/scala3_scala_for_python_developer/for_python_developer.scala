@@ -64,7 +64,18 @@ object for_python_developer {
     }.asInstanceOf[Record]
   
   def test2(): Unit = {
-//    show_record(fun_record(a => 3))
+    val r = {
+      for 
+        i <- 1 to 100
+      do { 
+        i
+//        println(f"i is $i")
+      
+      }
+    }
+    
+    println(f"r is $r")
+
   }
   
 
@@ -80,13 +91,36 @@ object for_python_developer {
     
     r(33)
     r2()
-    
+  }
+  
+  def test4(): Unit = {
+    val r = for 
+        e <- 1 to 100 
+        if e % 2 == 0  
+        if e % 3 == 0
+      yield 
+        e 
+    println(f"r is $r")
+  }
+  
+  def test5(): Unit = {
+    val r = for 
+      i <- 1 to 10 if i % 2 == 0
+      j <- 1 to 5
+    yield 
+      (i, j)
+    println(f"r is $r")
   }
   
   
   @main def python_developer_start(): Unit = {
+    test2()
+
+    test5()
+
     test_su()
     test1()
+    test4()
     
     val movies = Map(
       "Toy Story" -> 8.3,

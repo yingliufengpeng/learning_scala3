@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="ch13 External effects and I/O 暂告一段落,有机会重新思考">
+    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="ch13 External effects and I/O 暂告一段落,有机会重新思考 2">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch14_local_effects_and_mutable_state.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch12_applicative_and_traversable_functors.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch12_applicative_and_traversable_functors.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_scala_for_python_developer/for_python_developer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_scala_for_python_developer/for_python_developer.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +81,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
   </component>
-  <component name="RunManager" selected="Application.external_effectes_and_io2_start">
+  <component name="RunManager" selected="Application.local_effects_and_mutable_state_start">
     <configuration name="external_effectes_and_io2_start" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="scala3_function_programming.external_effectes_and_io2_start" />
       <module name="scala3-simple" />
@@ -105,8 +108,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="monads_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.monads_start" />
+    <configuration name="local_effects_and_mutable_state_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_function_programming.local_effects_and_mutable_state_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
@@ -144,31 +147,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.monads_start" />
       <item itemvalue="Application.start" />
       <item itemvalue="Application.external_effects_start" />
       <item itemvalue="Application.external_effectes_and_io2_start" />
       <item itemvalue="Application.python_developer_start" />
+      <item itemvalue="Application.local_effects_and_mutable_state_start" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.local_effects_and_mutable_state_start" />
+        <item itemvalue="Application.python_developer_start" />
         <item itemvalue="Application.external_effectes_and_io2_start" />
         <item itemvalue="Application.start" />
-        <item itemvalue="Application.python_developer_start" />
         <item itemvalue="Application.external_effects_start" />
-        <item itemvalue="Application.monads_start" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +215,10 @@
       <workItem from="1612922067292" duration="35588000" />
       <workItem from="1613010945949" duration="24794000" />
       <workItem from="1613113520266" duration="22251000" />
-      <workItem from="1613185691503" duration="32442000" />
+      <workItem from="1613185691503" duration="32589000" />
+      <workItem from="1613271056199" duration="8979000" />
+      <workItem from="1613357660633" duration="22871000" />
+      <workItem from="1613392938485" duration="10391000" />
     </task>
     <task id="LOCAL-00001" summary="scala3_book首次学习,并持之以恒">
       <created>1611237212575</created>
@@ -527,7 +535,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613225697201</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="ch13 External effects and I/O 暂告一段落,有机会重新思考 2">
+      <created>1613226540024</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1613226540024</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -546,7 +561,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ch20 inner_class abstract type members" />
     <MESSAGE value="ch15 match types" />
     <MESSAGE value="scala3 concurrency" />
     <MESSAGE value="scala3 for python developers" />
@@ -571,7 +585,8 @@
     <MESSAGE value="ch09 Parser combinators" />
     <MESSAGE value="ch10 Monoids" />
     <MESSAGE value="ch13 External effects and I/O 暂告一段落,有机会重新思考" />
-    <option name="LAST_COMMIT_MESSAGE" value="ch13 External effects and I/O 暂告一段落,有机会重新思考" />
+    <MESSAGE value="ch13 External effects and I/O 暂告一段落,有机会重新思考 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch13 External effects and I/O 暂告一段落,有机会重新思考 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

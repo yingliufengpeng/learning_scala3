@@ -33,6 +33,9 @@ meander: 蜿蜒而行
 makes effects first class: 效果一流
 amount to: 等同,接近
 bake into: 合併
+loose reasoning: 随意的推理
+what counts: 有什么价值
+decide up front: 预先决定
 
 
 exercise 7.3 改动量有些大,暂时不改

@@ -334,7 +334,8 @@ object ch12_applicative_and_traversable_functors {
 
 
     // 这个实现还是参考github中的代码逻辑
-    // refer https://github.com/TheDom/functional-programming-in-scala/blob/master/src/main/scala/com/dominikgruber/fpinscala/chapter12/Traverse.scala
+    // refer 
+    // https://github.com/TheDom/functional-programming-in-scala/blob/master/src/main/scala/com/dominikgruber/fpinscala/chapter12/Traverse.scala
     def reverse[A](fa: F[A]): F[A] =  
       mapAccum(fa, toList(fa).reverse)((_, as) => (as.head, as.tail))._1
 
