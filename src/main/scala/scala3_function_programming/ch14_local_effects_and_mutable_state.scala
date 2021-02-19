@@ -261,8 +261,7 @@ object ch14_local_effects_and_mutable_state {
               yield
                 ()
               ) else
-              noops[S]
-  
+                noops[S]
           yield
             ()
           }
@@ -272,9 +271,7 @@ object ch14_local_effects_and_mutable_state {
       yield 
         x
         
-      
-          
-          
+       
     // 这个逻辑自然必须要做重构的过程!!!
     def partition2[S](arr: STArray[S, Int], n: Int, r: Int, pivot: Int): ST[S, Int] = {
       for 

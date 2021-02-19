@@ -4,6 +4,16 @@ import reflect.Selectable.reflectiveSelectable
 object for_python_developer {
   type Par = [X] =>> Future[X]
   
+  val f: Int => Int = _ * 3 
+  val g = f andThen (_ + 3)
+  val h = g andThen (_ * 2)
+  
+  
+  
+  
+  
+  def exists[A](f: A => Boolean): Unit = ???
+  
   trait Future[+A]:
     def apply(k: A => Unit): Unit
   
@@ -58,6 +68,22 @@ object for_python_developer {
     r.show
   }
   
+  def process(block: => Unit): Unit =  
+    println(f"block start")
+    
+    block
+    
+    println(f"block end")
+    
+  
+  def test55(): Unit = {
+    process {
+      val r = 30
+      println(f"r is $r")
+    }
+  }
+   
+
   def fun_record(f: Int => Int) =
     new {
       def show(x: Int): Int = f(x)
@@ -84,6 +110,7 @@ object for_python_developer {
   type P[+T] = Int => (Int => T)
   
   def test1(): Unit = {
+    test5()
     test2()
     
     val r: Cons[Int] = println(_)

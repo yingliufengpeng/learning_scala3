@@ -93,8 +93,6 @@ object ch11_monads {
 
       def join(mma: F[F[A]]): F[A] =
         mma.flatMap(e => e)
-        
-        
   
   object Monad:
     given Monad[Gen] = new Monad[Gen] {
@@ -212,6 +210,11 @@ object ch11_monads {
 
 
     }
+  
+  trait MonadCatch[F[_]] extends Monad[F]:
+    def attempt[A](a: F[A]): F[Either[Throwable, A]]
+    def fail[A](f: Throwable): F[A]
+  
   
   @main def monads_start(): Unit = {
     Monad.test()

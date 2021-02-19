@@ -36,6 +36,8 @@ bake into: 合併
 loose reasoning: 随意的推理
 what counts: 有什么价值
 decide up front: 预先决定
+aside from: 除了
+no matter the cause: 不过是什么原因
 
 
 exercise 7.3 改动量有些大,暂时不改
