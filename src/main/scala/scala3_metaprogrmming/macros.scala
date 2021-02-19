@@ -175,12 +175,12 @@ object macros {
         // n will be the expr[Int] representing the argument.
         case '{ sum($n) } => n
         // Match a call to sum and extracts all its args in ann `Expr[Seq[Int]]`
-        case '{ sum(${Varargs(args)}: _*) } => sumExpr(args)
+        case '{ sum(${Varargs(args)} *) } => sumExpr(args)
         case body => body
     
     def sumExpr(args1: Seq[Expr[Int]])(using Quotes): Expr[Int] =
       def flatSumargs(arg: Expr[Int]): Seq[Expr[Int]] = arg match
-        case '{ sum(${Varargs(subArgs)}: _*) } => subArgs.flatMap(flatSumargs)
+        case '{ sum(${Varargs(subArgs)} *) } => subArgs.flatMap(flatSumargs)
         case arg => Seq(arg)
   
       val args2 = args1.flatMap(flatSumargs)
@@ -219,9 +219,9 @@ object macros {
               report.error(s"could not find implicit for ${Type.show[Show[tp]]}", arg); '{???}
         }
         val newArgsExpr = Varargs(argShowedExprs)
-        '{ $sc.s($newArgsExpr: _*) }
+        '{ $sc.s($newArgsExpr *) }
       case _ =>
-        // `new StringContext(...).showMeExpr(args: _*)` not an explicit `showMeExpr"..."`
+        // `new StringContext(...).showMeExpr(args *)` not an explicit `showMeExpr"..."`
         report.error(s"Args must be explicit", argsExpr)
         '{???}
   

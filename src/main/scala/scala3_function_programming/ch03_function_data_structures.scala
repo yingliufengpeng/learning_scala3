@@ -59,7 +59,7 @@ object ch03_function_data_structures {
       if as.isEmpty then
         Nil
       else
-        Cons(as.head, apply(as.tail: _*))  
+        Cons(as.head, apply(as.tail *))  
         
     
     def tail[A](as: MyList[A]): MyList[A] = as match
@@ -109,7 +109,7 @@ object ch03_function_data_structures {
     def concat[A](as: MyList[A]*): MyList[A] = as match
       case Nil => Nil
       case Seq(f) => f
-      case Seq(f, s, t:_*) => concat( (append2(f, s) :: t.toList): _* )
+      case Seq(f, s, t:_*) => concat( (append2(f, s) :: t.toList) * )
     
     def concat2[A](as: MyList[MyList[A]]): MyList[A] =
       foldRight(as, Nil: MyList[A])((list, acc) => append2(list, acc))

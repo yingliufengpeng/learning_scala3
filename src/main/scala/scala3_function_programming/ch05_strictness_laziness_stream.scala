@@ -189,7 +189,7 @@ object ch05_strictness_laziness_stream {
       if as.isEmpty then 
         Empty
       else
-        cons(as.head, apply(as.tail: _*))
+        cons(as.head, apply(as.tail*))
  
     
     def cons[A](hd: => A, t1: => MyStream[A]): MyStream[A] =

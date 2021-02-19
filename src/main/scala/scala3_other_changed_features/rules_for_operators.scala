@@ -103,8 +103,8 @@ object rules_for_operators {
       Some((f.name, f.children))
   
   def foo(f: Foo) = f match {
-    case Foo(name, x, y, ns: _*) => println(f"second ")
-    case Foo(name, ns: _*) => println(f"first ...")
+    case Foo(name, x, y, ns*) => println(f"second ")
+    case Foo(name, ns*) => println(f"first ...")
   }
   
   object ProdEmpty:

@@ -85,6 +85,7 @@ object ch19_context_functions {
   // Hence, the implementation of ensuring is as about as efficient as the best possible code one 
   // could write by hand.
   object PostConditions:
+    // 不透明的引用,防止外界引用真正的类新,以便导致未知定义的出现
     opaque type WrappedResult[T] = T 
     
     
@@ -113,7 +114,7 @@ object ch19_context_functions {
 
     val r7 = g( (ctx: ExecutionContext) ?=> f(3) ) // is expanded to g( (ctx: ExecutionContext) ?=> f(3)(using ctx)   )
 
-    val r8 = g((ctx: ExecutionContext) ?=> f(3)(using ctx) ) // is left as it is 
+    val r8 = g( (ctx: ExecutionContext) ?=> f(3)(using ctx) ) // is left as it is 
 
     println(f"r5: $r5, r6: $r6, r7:$r7 r8:$r8 ")
 
@@ -142,10 +143,10 @@ object ch19_context_functions {
     val s = List(1, 2, 3).sum.ensuring2(result == 6)
     println(f"s is $s")
 
-    val s2 = List(1, 2, 3).sum.ensuring2[Int]((wp: WrappedResult[Int]) ?=>  result(using wp) == 6) // ensuring2( (wp: WrappedResult[Int])  => result(using wp) == 6  )
+    val s2 = List(1, 2, 3).sum.ensuring2((wp: WrappedResult[Int]) ?=>  result(using wp) == 6) // ensuring2( (wp: WrappedResult[Int])  => result(using wp) == 6  )
     println(f"s is $s2")
 
-    val s3 = List(1, 2, 3).sum.ensuring2[Int]((wp: WrappedResult[Int]) ?=>  result == 6) // ensuring2( (wp: WrappedResult[Int])  => result(using wp) == 6  )
+    val s3 = List(1, 2, 3).sum.ensuring2((wp: WrappedResult[Int]) ?=>  result == 6) // ensuring2( (wp: WrappedResult[Int])  => result(using wp) == 6  )
     println(f"s is $s3")
     
     
