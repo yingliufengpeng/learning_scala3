@@ -1,0 +1,17 @@
+
+def f():
+    print("kk")
+
+val def_parser[Tree] =
+    string("def") |>| id_parser |-| fun_argument_parser |<| char(':')
+
+k =>
+    v =>
+        kk
+
+
+m =>
+    vv => zz
+
+
+

@@ -9,7 +9,8 @@ object ch11_type_class {
   // triat must definde how the show method works. Notice that the syntax is very close 
   // to a normal trait 
   trait Showable[A]:
-    extension (a: A) def show: String 
+    extension (a: A) 
+      def show: String 
   
   // a trait 
   trait Show:
@@ -27,7 +28,14 @@ object ch11_type_class {
   case class Person(firstName: String, lastName: String)
   
   given Showable[Person] with
-    extension (p: Person) def show: String = f"${p.firstName} ${p.lastName}"
+    extension (p: Person)
+      def show: String = f"${p.firstName} ${p.lastName}"
+  
+  case class PP(f: String)
+  given Showable[PP] with
+    extension (p: PP)
+      def show: String = "kkk"
+    
   
   // As shown, this is defined as an extension method on the Person class, and it uses the 
   // reference p inside the body of the show method 

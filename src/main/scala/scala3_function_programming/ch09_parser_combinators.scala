@@ -145,8 +145,7 @@ object ch09_parser_combinators {
 
         def attempt: Parser[A] =
           (s: Location) => p(s).uncommit
-
-
+ 
         // parsers
 
         def run(input: String): Result[A] =

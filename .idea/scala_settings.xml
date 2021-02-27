@@ -3,4 +3,8 @@
   <component name="ScalaProjectSettings">
     <option name="scala3DisclaimerShown" value="true" />
   </component>
+  <component name="WorksheetDefaultProjectSettings">
+    <option name="compilerProfileName" value="sbt 1" />
+    <option name="interactive" value="true" />
+  </component>
 </project>

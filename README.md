@@ -38,6 +38,8 @@ what counts: 有什么价值
 decide up front: 预先决定
 aside from: 除了
 no matter the cause: 不过是什么原因
+what information they specify to a possible implementation: 它们为可能的实现指定了哪些信息
+
 
 
 exercise 7.3 改动量有些大,暂时不改

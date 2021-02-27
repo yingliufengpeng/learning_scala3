@@ -8,9 +8,8 @@ object ch16_dependent_function_types {
   
   def extractKey(e: Entry): e.Key = e.key // a dependent method 
   
-  val extractor: (e: Entry) => e.Key = extractKey // a dependent function value 
+  val extractor: (e: Entry) => e.Key = extractKey // a dependent function value
   
-   
   @main def dependent_function_types_strt(): Unit = {
     
     
