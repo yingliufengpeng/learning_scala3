@@ -4,30 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="使用scala最新的Vararg Splices的写法">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/myworksheet.sc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/parser_combinator/JSON.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/parser_combinator/demo.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/parser_combinator/parser.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/parser_combinator/scala3_parser.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_new_syntax_demo/function_learning.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_new_syntax_demo/little_collection_demo.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/Regex_demo.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/demo2.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.bsp/sbt.json" beforeDir="false" afterPath="$PROJECT_DIR$/.bsp/sbt.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/scala3-simple-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/scala3-simple-build.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scala_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_settings.xml" afterDir="false" />
+    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="实现Json Parser">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dotty_new/tools/dot/util/CharBuffer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dotty_new/tools/dot/util/Dotty_Grammar.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dotty_new/tools/dot/util/eq_demo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dotty_new/tools/dot/util/scala3_syntax_demo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/Arithmetic_demo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/application.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/category_demo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/demo3.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/evals.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/guess_number.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/opaque_types.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/transformer_demo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/type_class_demo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/scala3-simple.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/scala3-simple.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/celsius.txt" beforeDir="false" afterPath="$PROJECT_DIR$/celsius.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/build.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_book/ch10_extension_method.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_book/ch10_extension_method.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_book/ch11_type_class.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_book/ch11_type_class.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_book/ch16_dependent_function_types.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_book/ch16_dependent_function_types.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch09_parser_combinators.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch09_parser_combinators.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_new_syntax_demo/new_syntax_demo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_new_syntax_demo/new_syntax_demo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch12_applicative_and_traversable_functors.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch12_applicative_and_traversable_functors.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/demo2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/demo2.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,8 +100,8 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -116,9 +112,9 @@
       <recent name="E:\scala3_repo\scala-3-project-template\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.demo2_start">
-    <configuration name="demo2_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_tools_demo.demo2_start" />
+  <component name="RunManager" selected="Application.transformer_demo_start">
+    <configuration name="application_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_tools_demo.application_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
@@ -130,47 +126,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="parser3_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="parser_combinator.parser3_start" />
-      <module name="scala3-simple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="parser_combinator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="parser_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="parser_combinator.parser_start" />
-      <module name="scala3-simple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="parser_combinator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="parsers_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="parser_combinator.parsers_start" />
-      <module name="scala3-simple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="parser_combinator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="regex_demo_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_tools_demo.regex_demo_start" />
+    <configuration name="categoy_demo_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_tools_demo.categoy_demo_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
@@ -178,24 +135,76 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="opaque_types_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_tools_demo.opaque_types_start" />
+      <module name="scala3-simple" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scala3_tools_demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="transformer_demo_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_tools_demo.transformer_demo_start" />
+      <module name="scala3-simple" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scala3_tools_demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="type_class_demo_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_tools_demo.type_class_demo_start" />
+      <module name="scala3-simple" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scala3_tools_demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.parsers_start" />
-      <item itemvalue="Application.parser3_start" />
-      <item itemvalue="Application.parser_start" />
-      <item itemvalue="Application.regex_demo_start" />
-      <item itemvalue="Application.demo2_start" />
+      <item itemvalue="Application.type_class_demo_start" />
+      <item itemvalue="Application.application_start" />
+      <item itemvalue="Application.categoy_demo_start" />
+      <item itemvalue="Application.opaque_types_start" />
+      <item itemvalue="Application.transformer_demo_start" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.demo2_start" />
-        <item itemvalue="Application.parser_start" />
-        <item itemvalue="Application.regex_demo_start" />
-        <item itemvalue="Application.parser3_start" />
-        <item itemvalue="Application.parsers_start" />
+        <item itemvalue="Application.transformer_demo_start" />
+        <item itemvalue="Application.opaque_types_start" />
+        <item itemvalue="Application.categoy_demo_start" />
+        <item itemvalue="Application.application_start" />
+        <item itemvalue="Application.type_class_demo_start" />
       </list>
     </recent_temporary>
   </component>
@@ -268,13 +277,23 @@
       <workItem from="1614347998325" duration="5388000" />
       <workItem from="1614392939804" duration="1229000" />
       <workItem from="1614409060612" duration="163000" />
-    </task>
-    <task id="LOCAL-00001" summary="scala3_book首次学习,并持之以恒">
-      <created>1611237212575</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1611237212575</updated>
+      <workItem from="1614410676500" duration="1966000" />
+      <workItem from="1614475639142" duration="1331000" />
+      <workItem from="1614495750095" duration="16872000" />
+      <workItem from="1614587183565" duration="10786000" />
+      <workItem from="1614652675907" duration="2207000" />
+      <workItem from="1614660810525" duration="6241000" />
+      <workItem from="1614740117742" duration="3629000" />
+      <workItem from="1614826910390" duration="8051000" />
+      <workItem from="1615039536330" duration="3580000" />
+      <workItem from="1615110424842" duration="6585000" />
+      <workItem from="1615194445371" duration="5743000" />
+      <workItem from="1615259468513" duration="9824000" />
+      <workItem from="1615304466465" duration="595000" />
+      <workItem from="1615306404725" duration="1302000" />
+      <workItem from="1615307760174" duration="116000" />
+      <workItem from="1615308138524" duration="787000" />
+      <workItem from="1615341244207" duration="26109000" />
     </task>
     <task id="LOCAL-00002" summary="ch01 type_inference">
       <created>1611237854837</created>
@@ -612,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613712473427</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="实现Json Parser">
+      <created>1614410783392</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1614410783392</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -634,7 +660,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/fpinscala" />
     </ignored-roots>
-    <MESSAGE value="scala3 contextual abstraction" />
     <MESSAGE value="简单的scala3 的使用" />
     <MESSAGE value="event bus update" />
     <MESSAGE value="scala3 contextual abstraction update" />
@@ -659,7 +684,8 @@
     <MESSAGE value="ch14 Local effects and mutable state" />
     <MESSAGE value="ch15 Stream processing and mutable state &#10;暂时告一段落,很复杂,可能看的很快,不过需要进一步的测试与思考" />
     <MESSAGE value="使用scala最新的Vararg Splices的写法" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用scala最新的Vararg Splices的写法" />
+    <MESSAGE value="实现Json Parser" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现Json Parser" />
   </component>
   <component name="WorksheetDefaultProjectSettings">
     <option name="compilerProfileName" value="sbt 1" />
@@ -677,8 +703,17 @@
           <line>430</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/scala3_tools_demo/demo2.scala</url>
+          <line>119</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/scala3_simple$property_based_testing_start.ic" NAME="property_based_testing_start Coverage Results" MODIFIED="1612782556074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

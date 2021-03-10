@@ -4,7 +4,6 @@ import scala3_function_programming.ch10_monoids.{Foldable, Monoid}
 import scala3_function_programming.ch11_monads.Functor
 import scala3_function_programming.ch06_general_state.{State}
 
-import java.awt.desktop.AppForegroundListener
 import java.util.Date
 
 object ch12_applicative_and_traversable_functors {
