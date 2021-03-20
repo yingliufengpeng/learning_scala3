@@ -4,26 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="实现Json Parser">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/dotty_new/tools/dot/util/CharBuffer.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/dotty_new/tools/dot/util/Dotty_Grammar.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/dotty_new/tools/dot/util/eq_demo.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/dotty_new/tools/dot/util/scala3_syntax_demo.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/Arithmetic_demo.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/application.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/category_demo.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/demo3.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/evals.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/guess_number.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/opaque_types.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/transformer_demo.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/type_class_demo.scala" afterDir="false" />
+    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="添加  Functional Justin  function programming in scala">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_episode/Scala3Numeric.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_episode/eval_result.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/dotty_hk_demo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/enums_demo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/inline_demo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/tuple_demo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.bsp/sbt.json" beforeDir="false" afterPath="$PROJECT_DIR$/.bsp/sbt.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/scala3-simple.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/scala3-simple.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/celsius.txt" beforeDir="false" afterPath="$PROJECT_DIR$/celsius.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch12_applicative_and_traversable_functors.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_function_programming/ch12_applicative_and_traversable_functors.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/demo2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_tools_demo/demo2.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +45,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="scala3-simple" type="f1a62948:ProjectNode" />
                 <item name="scala3-simple" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="scala3-simple" type="f1a62948:ProjectNode" />
+                <item name="scala3-simple" type="2d1252cf:ModuleNode" />
+                <item name="sbt commands" type="5c424813:SbtViewContributor$SbtCommandsGroupNode" />
               </path>
             </expand>
             <select />
@@ -96,12 +94,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/mill_repo/example-1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -112,9 +110,9 @@
       <recent name="E:\scala3_repo\scala-3-project-template\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.transformer_demo_start">
-    <configuration name="application_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_tools_demo.application_start" />
+  <component name="RunManager" selected="Application.eval_result_start">
+    <configuration name="dotty_hk_demo_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_tools_demo.dotty_hk_demo_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
@@ -126,8 +124,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="categoy_demo_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_tools_demo.categoy_demo_start" />
+    <configuration name="eval_result_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_episode.eval_result_start" />
+      <module name="scala3-simple" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scala3_episode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="inline_demo_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_tools_demo.inline_demo_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
@@ -139,8 +150,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="opaque_types_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_tools_demo.opaque_types_start" />
+    <configuration name="main_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_episode.main_start" />
+      <module name="scala3-simple" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scala3_episode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tuple_demo_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_tools_demo.tuple_demo_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
@@ -152,59 +176,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="transformer_demo_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_tools_demo.transformer_demo_start" />
-      <module name="scala3-simple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scala3_tools_demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="type_class_demo_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_tools_demo.type_class_demo_start" />
-      <module name="scala3-simple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scala3_tools_demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.type_class_demo_start" />
-      <item itemvalue="Application.application_start" />
-      <item itemvalue="Application.categoy_demo_start" />
-      <item itemvalue="Application.opaque_types_start" />
-      <item itemvalue="Application.transformer_demo_start" />
+      <item itemvalue="Application.tuple_demo_start" />
+      <item itemvalue="Application.inline_demo_start" />
+      <item itemvalue="Application.dotty_hk_demo_start" />
+      <item itemvalue="Application.eval_result_start" />
+      <item itemvalue="Application.main_start" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.transformer_demo_start" />
-        <item itemvalue="Application.opaque_types_start" />
-        <item itemvalue="Application.categoy_demo_start" />
-        <item itemvalue="Application.application_start" />
-        <item itemvalue="Application.type_class_demo_start" />
+        <item itemvalue="Application.eval_result_start" />
+        <item itemvalue="Application.main_start" />
+        <item itemvalue="Application.dotty_hk_demo_start" />
+        <item itemvalue="Application.inline_demo_start" />
+        <item itemvalue="Application.tuple_demo_start" />
       </list>
     </recent_temporary>
   </component>
@@ -293,14 +289,20 @@
       <workItem from="1615306404725" duration="1302000" />
       <workItem from="1615307760174" duration="116000" />
       <workItem from="1615308138524" duration="787000" />
-      <workItem from="1615341244207" duration="26109000" />
-    </task>
-    <task id="LOCAL-00002" summary="ch01 type_inference">
-      <created>1611237854837</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1611237854837</updated>
+      <workItem from="1615341244207" duration="28039000" />
+      <workItem from="1615428727415" duration="9446000" />
+      <workItem from="1615514699457" duration="8795000" />
+      <workItem from="1615563122912" duration="1553000" />
+      <workItem from="1615604493601" duration="476000" />
+      <workItem from="1615605359511" duration="6093000" />
+      <workItem from="1615639922640" duration="5110000" />
+      <workItem from="1615861318015" duration="489000" />
+      <workItem from="1615861843933" duration="605000" />
+      <workItem from="1615969465372" duration="100000" />
+      <workItem from="1616058922886" duration="654000" />
+      <workItem from="1616208811674" duration="2160000" />
+      <workItem from="1616230478390" duration="92000" />
+      <workItem from="1616230612381" duration="4715000" />
     </task>
     <task id="LOCAL-00003" summary="ch01 generic_class">
       <created>1611238038346</created>
@@ -638,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614410783392</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="添加  Functional Justin  function programming in scala">
+      <created>1615388879740</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1615388879741</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -660,7 +669,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/fpinscala" />
     </ignored-roots>
-    <MESSAGE value="简单的scala3 的使用" />
     <MESSAGE value="event bus update" />
     <MESSAGE value="scala3 contextual abstraction update" />
     <MESSAGE value="scala3 other changed features" />
@@ -685,7 +693,8 @@
     <MESSAGE value="ch15 Stream processing and mutable state &#10;暂时告一段落,很复杂,可能看的很快,不过需要进一步的测试与思考" />
     <MESSAGE value="使用scala最新的Vararg Splices的写法" />
     <MESSAGE value="实现Json Parser" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现Json Parser" />
+    <MESSAGE value="添加  Functional Justin  function programming in scala" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加  Functional Justin  function programming in scala" />
   </component>
   <component name="WorksheetDefaultProjectSettings">
     <option name="compilerProfileName" value="sbt 1" />
@@ -698,16 +707,6 @@
           <properties class="scala.MatchError" package="scala" />
           <option name="timeStamp" value="4" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/parser_combinator/parser.scala</url>
-          <line>430</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/scala3_tools_demo/demo2.scala</url>
-          <line>119</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

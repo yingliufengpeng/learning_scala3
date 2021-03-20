@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id="root [file:/E:/scala3_repo/scala-3-project-template/]" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_15">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/../../target/scala-3.0.0-RC1/classes" />
     <output-test url="file://$MODULE_DIR$/../../target/scala-3.0.0-RC1/test-classes" />
     <exclude-output />
@@ -9,7 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/../../src/test/scala" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/../../target" />
     </content>
-    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="sbt: com.google.protobuf:protobuf-java:3.7.0:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="sbt: com.novocode:junit-interface:0.11:jar" level="project" />

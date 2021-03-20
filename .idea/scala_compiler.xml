@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="scala-3-project-template_9646,scala3-simple" />
+    <profile name="sbt 1" modules="scala-3-project-template_9646" />
+    <profile name="sbt 2" modules="scala3-simple">
+      <parameters>
+        <parameter value="-bootclasspath" />
+        <parameter value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_281\jre\classes" />
+      </parameters>
+    </profile>
   </component>
 </project>
