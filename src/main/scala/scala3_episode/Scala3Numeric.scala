@@ -15,7 +15,7 @@ object Scala3Numeric:
       def squre: T = fa * fa
   
   object Numeric:
-    given intNumeric2: Numeric[Int] with
+    given intNumeric: Numeric[Int] with
       def zero: Int = 0
       extension (fa: Int)
         def add(fb: Int): Int = fa + fb
@@ -29,7 +29,7 @@ object Scala3Numeric:
           for
             as <- fa
             bs <- fb
-            s <- as.toString ++ " " ++ bs.toString
+            s <- as.toString ++ bs.toString
           yield
               s
         }
@@ -38,7 +38,11 @@ object Scala3Numeric:
     def test(): Unit = {
       val n_s = summon[Numeric[String]]
       val r = "12" * "34"
-      print(s"r is $r")
+      println(s"r is $r")
+      
+      val r2 = 666.squre 
+      println(s"r2 is $r2")
+      
     }
 
 
