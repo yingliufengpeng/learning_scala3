@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="Functional Justin  function programming in scala &#10;Functor/Monad/Monoid typeclass">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_episode/datatypes/writerT.scala" afterDir="false" />
+    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="Functional Justin  function programming in scala &#10;MonadTransformer  WriterT">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_episode/typeclass/semigroup/semigroup.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_episode/typeclass/semigroup/semigroup.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_episode/datatypes/writerT.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_episode/datatypes/writerT.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_episode/eval_error.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_episode/eval_error.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_episode/eval_result.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_episode/eval_result.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +103,7 @@
       <recent name="E:\scala3_repo\scala-3-project-template\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.writerT_start">
+  <component name="RunManager" selected="Application.eval_result_start">
     <configuration name="eval_result_start" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="scala3_episode.eval_result_start" />
       <module name="scala3-simple" />
@@ -190,10 +191,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.eval_result_start" />
         <item itemvalue="Application.writerT_start" />
         <item itemvalue="Application.semigroup_start" />
         <item itemvalue="Application.monad_start" />
-        <item itemvalue="Application.eval_result_start" />
         <item itemvalue="Application.functor_start" />
       </list>
     </recent_temporary>
@@ -297,14 +298,7 @@
       <workItem from="1616208811674" duration="2160000" />
       <workItem from="1616230478390" duration="92000" />
       <workItem from="1616230612381" duration="14713000" />
-      <workItem from="1616292269784" duration="22093000" />
-    </task>
-    <task id="LOCAL-00006" summary="ch05  Polymorphhic methods">
-      <created>1611243777442</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1611243777442</updated>
+      <workItem from="1616292269784" duration="24938000" />
     </task>
     <task id="LOCAL-00007" summary="ch06 Intersection type">
       <created>1611244488627</created>
@@ -642,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616325187517</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Functional Justin  function programming in scala &#10;MonadTransformer  WriterT">
+      <created>1616340475434</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1616340475434</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +665,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/fpinscala" />
     </ignored-roots>
-    <MESSAGE value="scala3 other new features" />
     <MESSAGE value="scala inline" />
     <MESSAGE value="scala FAQ" />
     <MESSAGE value="scala macros" />
@@ -689,7 +689,8 @@
     <MESSAGE value="Functional Justin  function programming in scala &#10;初步完成简单表达式的写法" />
     <MESSAGE value="Functional Justin  function programming in scala &#10;Numeric typeclass" />
     <MESSAGE value="Functional Justin  function programming in scala &#10;Functor/Monad/Monoid typeclass" />
-    <option name="LAST_COMMIT_MESSAGE" value="Functional Justin  function programming in scala &#10;Functor/Monad/Monoid typeclass" />
+    <MESSAGE value="Functional Justin  function programming in scala &#10;MonadTransformer  WriterT" />
+    <option name="LAST_COMMIT_MESSAGE" value="Functional Justin  function programming in scala &#10;MonadTransformer  WriterT" />
   </component>
   <component name="WorksheetDefaultProjectSettings">
     <option name="compilerProfileName" value="sbt 1" />

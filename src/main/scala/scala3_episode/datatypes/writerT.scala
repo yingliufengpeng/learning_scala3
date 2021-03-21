@@ -24,6 +24,9 @@ object writerT {
         def show = ???
         def flatMap[B](f: A => WriterT[F, W, B]): WriterT[F, W, B] =
           Monad[[X] =>> WriterT[F, W, X]].flatMap(fa)(f)
+          
+        def map2[B, C](fb: WriterT[F, W, B])(f: (A, B) => C): WriterT[F, W, C] =
+          Monad[[X] =>> WriterT[F, W, X]].map2(fa)(fb)(f)
 //      def map[B](f: A => B): WriterT[F, W, B] =
 //        Monad[[X] =>> WriterT[F, W, X]].map(fa)(f)
         

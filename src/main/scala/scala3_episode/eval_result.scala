@@ -1,6 +1,7 @@
 package scala3_episode
 
-import scala3_episode.eval_error.{EvalError, EvalResult}
+import scala3_episode.datatypes.writerT.WriterT 
+import scala3_episode.eval_error.{EvalError, EvalResult, EvalResultW}
 import scala3_episode.typeclass.numeric.Scala3Numeric.Numeric
 
 
@@ -17,7 +18,7 @@ object eval_result {
     case Var(identifer: String)
   
     import Exp.*
-    def eval(using env: Env[T], numeric: Numeric[T]): EvalResult[T] = this match
+    def eval(using env: Env[T], numeric: Numeric[T]): EvalResultW[T] = this match
       case Var(id) => handleVar(id)
       case Val(value) => handleVal(value)
       case Add(l, r) => handleAdd(l, r)
@@ -26,16 +27,17 @@ object eval_result {
       case Div(l, r) => handleDiv(l, r)
   
   object Exp:
-    def handleAdd[T](l: Exp[T], r: Exp[T])(using env: Env[T], numeric: Numeric[T]): EvalResult[T] = l.eval + r.eval 
-    def handleMul[T](l: Exp[T], r: Exp[T])(using env: Env[T], numeric: Numeric[T]): EvalResult[T] = l.eval * r.eval 
-    def handleSub[T](l: Exp[T], r: Exp[T])(using env: Env[T], numeric: Numeric[T]): EvalResult[T] = l.eval - r.eval 
-    def handleDiv[T](l: Exp[T], r: Exp[T])(using env: Env[T], numeric: Numeric[T]): EvalResult[T] = l.eval / r.eval 
-    def handleVar[T](id: String)(using env: Env[T], numeric: Numeric[T]): EvalResult[T] =
+    def handleAdd[T](l: Exp[T], r: Exp[T])(using env: Env[T], numeric: Numeric[T]): EvalResultW[T] = l.eval + r.eval 
+    def handleMul[T](l: Exp[T], r: Exp[T])(using env: Env[T], numeric: Numeric[T]): EvalResultW[T] = l.eval * r.eval 
+    def handleSub[T](l: Exp[T], r: Exp[T])(using env: Env[T], numeric: Numeric[T]): EvalResultW[T] = l.eval - r.eval 
+    def handleDiv[T](l: Exp[T], r: Exp[T])(using env: Env[T], numeric: Numeric[T]): EvalResultW[T] = l.eval / r.eval 
+    def handleVar[T](id: String)(using env: Env[T], numeric: Numeric[T]): EvalResultW[T] =
       env.get(id) match
-        case Some(v) => Right(v)
-        case _ => Left(EvalError.SymbolNotFound(id))
+        case Some(v) => WriterT.lift(Right(v))
+        case _ => WriterT.lift(Left(EvalError.SymbolNotFound(id)))
     
-    def handleVal[T](v: T)(using env: Env[T], numeric: Numeric[T]): EvalResult[T] = Right(v)
+    def handleVal[T](v: T)(using env: Env[T], numeric: Numeric[T]): EvalResultW[T] = 
+      WriterT.lift[EvalResult, List[String], T](Right(v)).tellWith(a => List(s"Hanled var id $a"))
     
     def summonEnv[T]: Env[T] ?=> Env[T] = summon[Env[T]]
     
@@ -47,12 +49,15 @@ object eval_result {
             Val(30),
             Div(
               Var("x"),
-              Var("y")
+              Sub(
+                Var("y"),
+                Val(40),
+              )
             )
           )
         )
       
-      given env: Env[Int] = Map("x" -> 17, "y" -> 1, "z" -> 2) 
+      given env: Env[Int] = Map("x" -> 17, "y" -> 10, "z" -> 2) 
       
       val eval1 = exp1.eval
       
