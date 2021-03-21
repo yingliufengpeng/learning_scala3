@@ -41,8 +41,13 @@ object semigroup {
     given Monoid[String] with 
       def zero: String = ""
       extension (fa: String)
-        def combine(fb: String): String = fa + fb 
-    
+        def combine(fb: String): String = fa + fb
+
+    given Monoid[List[String]] with
+      def zero: List[String] = List.empty
+      extension (fa: List[String])
+        def combine(fb: List[String]): List[String] = fa ++ fb
+
     given mapMonoid[K, V: Monoid]: Monoid[Map[K, V]] with 
       def zero: Map[K, V] = Map.empty
       extension (fa: Map[K, V])
