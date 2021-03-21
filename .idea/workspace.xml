@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="Functional Justin  function programming in scala &#10;初步完成简单表达式的写法">
+    <list default="true" id="383e372b-ccb0-476d-a7dd-a54406588141" name="Default Changelist" comment="Functional Justin  function programming in scala &#10;Numeric typeclass">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_episode/eval_error.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_episode/typeclass/aplicative/applicative.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_episode/typeclass/functor/functor.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_episode/typeclass/monad/monad.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_episode/typeclass/numeric/Scala3Numeric.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/scala3_episode/typeclass/semigroup/semigroup.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_episode/Scala3Numeric.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_episode/Scala3Numeric.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_episode/Scala3Numeric.scala" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/scala3_episode/eval_result.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala3_episode/eval_result.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,9 +60,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Scala Object" />
         <option value="Scala Worksheet" />
         <option value="Package Object" />
+        <option value="Scala Object" />
       </list>
     </option>
   </component>
@@ -102,26 +108,13 @@
       <recent name="E:\scala3_repo\scala-3-project-template\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.main_start">
-    <configuration name="dotty_hk_demo_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_tools_demo.dotty_hk_demo_start" />
-      <module name="scala3-simple" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scala3_tools_demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.semigroup_start">
     <configuration name="eval_result_start" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="scala3_episode.eval_result_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scala3_episode.*" />
+          <option name="PATTERN" value="scala3_episode.typeclass.functor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,12 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="inline_demo_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_tools_demo.inline_demo_start" />
+    <configuration name="functor_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_episode.functor_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scala3_tools_demo.*" />
+          <option name="PATTERN" value="scala3_episode.typeclass.functor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,7 +140,7 @@
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scala3_episode.*" />
+          <option name="PATTERN" value="scala3_episode.typeclass.functor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,12 +148,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tuple_demo_start" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="scala3_tools_demo.tuple_demo_start" />
+    <configuration name="monad_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_episode.typeclass.monad.monad_start" />
       <module name="scala3-simple" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scala3_tools_demo.*" />
+          <option name="PATTERN" value="scala3_episode.typeclass.monad.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,31 +161,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="semigroup_start" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="scala3_episode.typeclass.semigroup.semigroup_start" />
+      <module name="scala3-simple" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scala3_episode.typeclass.semigroup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.tuple_demo_start" />
-      <item itemvalue="Application.inline_demo_start" />
-      <item itemvalue="Application.dotty_hk_demo_start" />
       <item itemvalue="Application.eval_result_start" />
       <item itemvalue="Application.main_start" />
+      <item itemvalue="Application.functor_start" />
+      <item itemvalue="Application.monad_start" />
+      <item itemvalue="Application.semigroup_start" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.main_start" />
+        <item itemvalue="Application.semigroup_start" />
+        <item itemvalue="Application.monad_start" />
         <item itemvalue="Application.eval_result_start" />
-        <item itemvalue="Application.dotty_hk_demo_start" />
-        <item itemvalue="Application.inline_demo_start" />
-        <item itemvalue="Application.tuple_demo_start" />
+        <item itemvalue="Application.functor_start" />
+        <item itemvalue="Application.main_start" />
       </list>
     </recent_temporary>
   </component>
@@ -294,14 +302,8 @@
       <workItem from="1616058922886" duration="654000" />
       <workItem from="1616208811674" duration="2160000" />
       <workItem from="1616230478390" duration="92000" />
-      <workItem from="1616230612381" duration="7316000" />
-    </task>
-    <task id="LOCAL-00004" summary="ch03_variance">
-      <created>1611240387624</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1611240387624</updated>
+      <workItem from="1616230612381" duration="14713000" />
+      <workItem from="1616292269784" duration="8854000" />
     </task>
     <task id="LOCAL-00005" summary="ch04 Upper and lower type bounds">
       <created>1611243208606</created>
@@ -639,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616248028300</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Functional Justin  function programming in scala &#10;初步完成简单表达式的写法">
+      <created>1616250849004</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1616250849004</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -661,7 +670,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/fpinscala" />
     </ignored-roots>
-    <MESSAGE value="scala3 contextual abstraction update" />
     <MESSAGE value="scala3 other changed features" />
     <MESSAGE value="scala3 other new features" />
     <MESSAGE value="scala inline" />
@@ -686,6 +694,7 @@
     <MESSAGE value="实现Json Parser" />
     <MESSAGE value="添加  Functional Justin  function programming in scala" />
     <MESSAGE value="Functional Justin  function programming in scala &#10;初步完成简单表达式的写法" />
+    <MESSAGE value="Functional Justin  function programming in scala &#10;Numeric typeclass" />
     <option name="LAST_COMMIT_MESSAGE" value="Functional Justin  function programming in scala &#10;初步完成简单表达式的写法" />
   </component>
   <component name="WorksheetDefaultProjectSettings">
