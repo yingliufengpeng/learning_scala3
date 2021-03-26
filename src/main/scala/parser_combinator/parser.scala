@@ -95,6 +95,7 @@ object parser {
       string("") map (_ => v)
 
     def success[A](v: => A): Parser[A]
+ 
     
 //    def fail[A]: Parser[A] 
     
@@ -198,7 +199,7 @@ object parser {
         if origin_str.length >= str.length && origin_str.substring(0, str.length) == str then
           Success(str, str.length)
         else
-          val r = location.toError(s"Expected: $str found ${origin_str}")
+          val r = location.toError(s"Expected: [---$str---] found [--->${origin_str}<---]")
           Failure(r, false)
 
     override def many[A](p: Parser[A]): Parser[List[A]] = {
@@ -480,6 +481,24 @@ object parser {
       println(f"r3 is $r3")
       
     }
+    
+    def test18(): Unit = {
+      lazy val general_parser: Parser[List[Char]] = (middle_bracket_parser or parens_parser or larger_bracket_parser ).many.map(e => e.flatten)
+           
+      lazy val middle_bracket_parser: Parser[List[Char]]  = (char('[') |-| general_parser |-| char(']')) map {case ((ch1, t), ch2) => (ch1 :: t) :+ ch2 }
+      lazy val parens_parser: Parser[List[Char]] = (char('(') |-| general_parser |-| char(')')) map { case ((ch1, t), ch2) => (ch1 :: t) :+ ch2 }
+      lazy val larger_bracket_parser: Parser[List[Char]] = (char('{') |-| general_parser |-| char('}')) map { case ((ch1, t), ch2) => (ch1 :: t) :+ ch2}
+      
+      val inputs = List("[{}[]{{[([{}[]])]}}]", "[][]{}{")
+      inputs.foreach(i => {
+        val r = general_parser.run(i)
+        r match
+          case Success(values, _) if values.size == i.size => println(s"ok")
+          case _ => println(s"error")
+      })
+     
+ 
+    }
   
     def test17(): Unit = {
       val str =
@@ -558,8 +577,11 @@ object parser {
       res.map(e => JObject(e))
   
     json_parser
+  
+ 
 
   @main def parser_start(): Unit = {
-    MyParsers.test17()
+//    MyParsers.test17()
+    MyParsers.test18()
   }
 }

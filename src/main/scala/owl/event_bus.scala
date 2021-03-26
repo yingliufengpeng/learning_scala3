@@ -1,6 +1,5 @@
 package owl
 
-import javax.swing.event.DocumentEvent.EventType
 import scala.collection.mutable.ArrayBuffer
 import scala.collection.mutable.Map
 
@@ -8,19 +7,20 @@ import scala.collection.mutable.Map
 type Callback = (args: Tuple) => Unit
  
 
-case class Subscription(owner: Any, callback: Callback)
+case class Subscription[T](owner: T | Null, callback: Callback)
 
-class EventBus:
+
+class EventBus[T]:
    
-  val subscriptions: Map[String, ArrayBuffer[Subscription]] = Map.empty
+  val subscriptions: Map[String, ArrayBuffer[Subscription[T]]] = Map.empty
 
-  def on(eventType: String, owner: Any, callback: Callback): Unit = {
+  def on(eventType: String, owner: T | Null, callback: Callback): Unit = {
     this.subscriptions
       .getOrElseUpdate(eventType, ArrayBuffer.empty)
       .addOne(Subscription(owner, callback))
   }
 
-  def off(eventType: String, owner: Any): Unit = {
+  def off(eventType: String, owner: T | Null): Unit = {
     val r = this.subscriptions
       .getOrElseUpdate(eventType, ArrayBuffer.empty)
       .filterInPlace(s => s.owner != owner)
@@ -30,11 +30,10 @@ class EventBus:
     this.subscriptions
       .getOrElseUpdate(eventType, ArrayBuffer.empty)
       .foreach(s => {
-        println(f"s is $s,   owner is ${s.owner}  args is $args")
         s.callback(s.owner, args)
       })
   }
-
+ 
   def clear(): Unit = {
     this.subscriptions.empty
   }
@@ -66,8 +65,7 @@ object tests {
    
   def ff[A, B, C](x: A, y: B, z: C): Tuple = (x, y, z)
    
-  @main def tests_start(): Unit = {
-
+  def test3(): Unit = {
     val r: Callback = (args) => {
       args.productIterator.foreach(println)
       println(f"args is $args class is ${args.getClass}")
@@ -91,18 +89,39 @@ object tests {
     eventBus.off("change", null)
 
     eventBus.trigger("change", (1, 3, "4"))
-    
-    
-    val r10: Any = null 
-    val r11 = null 
-    def f[T](x: T) = println(f"x is $x")
-    
-    f(null)
-    
-    val r12: Tuple = ff(3, Object(), "4")
-    println(f"r12 is $r12")
-    
 
+
+    val r10: Any = null
+    val r11 = null
+    def f[T](x: T) = println(f"x is $x")
+
+    f(null)
+
+    val r12: Tuple = ff(3, Object(), "4")
+    println(s"r12 is $r12")
+
+  }
+  
+  
+  def test4(): Unit = {
+    val callback: Callback = (args) => {
+//      args.productIterator.foreach(println)
+//      println(s"args is $args class is ${args.getClass}")
+      val (owner, (a, b, _, _)) = args 
+      println(s"owner is $owner a is $a b is $b")
+
+    }
+    
+    val bus = EventBus[Int]() 
+    bus.on("change", 3, callback)
+    
+    bus.trigger("change", ("4", "5", 2, Object()))
+    
+  }
+  
+  @main def tests_start(): Unit = {
+
+    test4()
   }
 
 

@@ -1,20 +1,41 @@
 package dotty_new.tools.dot.util
 
-import scala.collection.mutable.ArrayBuffer
+import scala.io
 
-// A character buffer that exposes the internal array for reading
-class CharBuffer(initialSize: Int = 1024) {
-  private val buffer = ArrayBuffer.empty[Int]
-  
-  def add(v: Int): Unit = {
-    buffer += v 
-    
-  }
+import dotty.tools.dotc.parsing.CharArrayReader
+
+class AB:
+  val r = 3
+
+class MyCharArrayReader extends CharArrayReader :
+  val buf = io.Source.fromFile("./celsius.txt").toArray
+
+  override protected def decodeUni: Boolean = true
+
+  override protected def error(msg: String, offset: Int): Unit = {}
+
+
+def test2(): Unit = {
+  val reader = MyCharArrayReader()
+  println(s"reader is $reader")
+  (1 to 20).foreach(_ => print(reader.getc()))
+
 }
 
-object CharBuffer:
+def test(): Unit = {
+  val a = AB()
+  println(s"a is $a")
+}
 
-  val r = 0
+@main def myCharArrayReader_start2(): Unit = {
+
+
+  test()
+  test2()
+
+}
+
+
 
 
 

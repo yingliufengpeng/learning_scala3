@@ -1,18 +1,39 @@
 
 import org.junit.Test
 import org.junit.Assert._
-import scala3_decorator.macros.route
+ 
+enum Region:
+  case A(outer: Region | Null)
+  case B(outer: Region | Null)
+
+enum Tree[T]:
+  case Branch(left: Tree[T], right: Tree[T])
+  case Leaf(v: T)
 
 
 class Test1 {
+  val r = 10 
+  var currentRegion = Region.B(null)
+  
+  var current_tree = Tree.Leaf(3)
+  
   @Test def t1(): Unit = {
-
-    val r = route("r1", "r2")((t: Int) => t)
-
-//    println(r(3))
-    val r2 = r(3)
-    println(r2)
-
+    val r = 10 
+    println(s"r is $r")
+    (1 to 10).foreach{ _ => currentRegion = Region.B(currentRegion)}
+    println(s"current is $currentRegion")
+    
+    (1 to 10).foreach { _ => current_tree = Tree.Branch(current_tree, Tree.Leaf(3)) }
+    println(s"current tree is $current_tree")
+    
+    (1 to 10).foreach { _ => 
+      current_tree = current_tree match
+        case Tree.Branch(l, _) => l
+        case p => p 
+    }
+    println(s"current tree is $current_tree")
+    
   }
+ 
 }
  

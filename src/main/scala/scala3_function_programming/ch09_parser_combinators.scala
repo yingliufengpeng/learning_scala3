@@ -221,6 +221,15 @@ object ch09_parser_combinators {
 
 
       }
+  
+      def test2(): Unit = {
+//        lazy val general_parser: Parser[List[Char]] = middle_bracket_parser ** parens_parser ** larger_bracket_parser
+//        lazy val middle_bracket_parser: Parser[List[Char]]  = char('[') |>| general_parser |<| char(']')
+//        lazy val parens_parser: Parser[List[Char]] = char('(') ** general_parser ** char(')')
+//        lazy val larger_bracket_parser: Parser[List[Char]] = char('{') ** general_parser ** char('}')
+//        
+        
+      }
 
 
   object jsons:
